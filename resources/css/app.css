@@ -1,0 +1,39 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+	font-family: "Gellix";
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+	unicode-range: U+000-5FF;
+	src: url(/fonts/Gellix/Gellix-Regular.woff) format('woff');
+}
+
+@font-face {
+	font-family: "Gellix";
+	font-weight: 400;
+	font-style: italic;
+	font-display: auto;
+	unicode-range: U+000-5FF;
+	src: url(/fonts/Gellix/Gellix-RegularItalic.woff) format('woff');
+}
+
+@font-face {
+	font-family: "Gellix";
+	font-weight: 700;
+	font-style: italic;
+	font-display: auto;
+	unicode-range: U+000-5FF;
+	src: url(/fonts/Gellix/Gellix-BoldItalic.woff) format('woff');
+}
+
+@font-face {
+	font-family: "Gellix";
+	font-weight: 700;
+	font-style: normal;
+	font-display: auto;
+	unicode-range: U+000-5FF;
+	src: url(/fonts/Gellix/Gellix-Bold.woff) format('woff');
+}
