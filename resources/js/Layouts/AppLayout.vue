@@ -230,7 +230,7 @@
             <breadcrumbs></breadcrumbs>
 
             <!-- Page Content -->
-            <main>
+            <main> 
               <div class="min-h-screen flex">
                 <slot></slot>
               </div>
@@ -246,7 +246,6 @@
     import JetDropdownLink from '@/Jetstream/DropdownLink'
     import JetNavLink from '@/Jetstream/NavLink'
     import JetResponsiveNavLink from '@/Jetstream/ResponsiveNavLink'
-    import Breadcrumbs from './Components/Breadcrumbs'
 
     import { Dialog, DialogOverlay, DialogTitle, TransitionChild, TransitionRoot } from '@headlessui/vue'
     import { XIcon } from '@heroicons/vue/outline'
@@ -260,7 +259,6 @@
             JetDropdownLink,
             JetNavLink,
             JetResponsiveNavLink,
-            Breadcrumbs,         
             Dialog,
             DialogOverlay,
             DialogTitle,

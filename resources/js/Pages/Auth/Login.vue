@@ -1,58 +1,62 @@
 <template>
-    <jet-authentication-card class="login-container justify-items-center">
+    <Head title="Log in" />
 
-        
-        <div class="mb-12 mt-20 flex justify-center">
+    <jet-authentication-card>
+        <template #logo>
             <jet-authentication-card-logo />
-        </div>
+        </template>
 
         <jet-validation-errors class="mb-4" />
 
-        <!-- <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
+        <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
             {{ status }}
-        </div> -->
-        <p class="text-white font-bold text-base text-center">Sign in and start managing your candidates!</p>
+        </div>
 
-        <form @submit.prevent="submit" class="px-12 mt-8">
+        <form @submit.prevent="submit">
             <div>
-                <jet-input id="email" placeholder="Login" type="email" class="mt-1 block w-full" v-model="form.email" required autofocus />
+                <jet-label for="email" value="Email" />
+                <jet-input id="email" type="email" class="mt-1 block w-full" v-model="form.email" required autofocus />
             </div>
 
-            <div class="mt-8">
-                <jet-input id="password" placeholder="Password" type="password" class="mt-1 block w-full" v-model="form.password" required autocomplete="current-password" />
+            <div class="mt-4">
+                <jet-label for="password" value="Password" />
+                <jet-input id="password" type="password" class="mt-1 block w-full" v-model="form.password" required autocomplete="current-password" />
             </div>
 
-            <div class="flex justify-between mt-6">
+            <div class="block mt-4">
                 <label class="flex items-center">
                     <jet-checkbox name="remember" v-model:checked="form.remember" />
-                    <span class="ml-3 text-sm text-white -mb-1">Remember me</span>
+                    <span class="ml-2 text-sm text-gray-600">Remember me</span>
                 </label>
-                <inertia-link v-if="canResetPassword" :href="route('password.request')" class="text-sm -mb-1 text-yellow-400 hover:opacity-90">
-                    Forgot password?
-                </inertia-link>
             </div>
 
-            <jet-button class="mt-8 mb-16 w-full text-center" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                Login
-            </jet-button>
+            <div class="flex items-center justify-end mt-4">
+                <Link v-if="canResetPassword" :href="route('password.request')" class="underline text-sm text-gray-600 hover:text-gray-900">
+                    Forgot your password?
+                </Link>
+
+                <jet-button class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+                    Log in
+                </jet-button>
+            </div>
         </form>
-        <inertia-link href="/" class="absolute bottom-16 ml-16 underline text-center text-white leading-5 font-bold text-base hover:opacity-90">
-            Lisa Sorgini  2007, Motherhood series
-        </inertia-link>
     </jet-authentication-card>
 </template>
 
 <script>
-    import JetAuthenticationCard from '@/Jetstream/AuthenticationCard'
-    import JetAuthenticationCardLogo from '@/Jetstream/AuthenticationCardLogo'
-    import JetButton from '@/Jetstream/Button'
-    import JetInput from '@/Jetstream/Input'
-    import JetCheckbox from '@/Jetstream/Checkbox'
-    import JetLabel from '@/Jetstream/Label'
-    import JetValidationErrors from '@/Jetstream/ValidationErrors'
+    import { defineComponent } from 'vue'
+    import JetAuthenticationCard from '@/Jetstream/AuthenticationCard.vue'
+    import JetAuthenticationCardLogo from '@/Jetstream/AuthenticationCardLogo.vue'
+    import JetButton from '@/Jetstream/Button.vue'
+    import JetInput from '@/Jetstream/Input.vue'
+    import JetCheckbox from '@/Jetstream/Checkbox.vue'
+    import JetLabel from '@/Jetstream/Label.vue'
+    import JetValidationErrors from '@/Jetstream/ValidationErrors.vue'
+    import { Head, Link } from '@inertiajs/inertia-vue3';
 
-    export default {
+    export default defineComponent({
         components: {
+            Head,
             JetAuthenticationCard,
             JetAuthenticationCardLogo,
             JetButton,
@@ -60,6 +64,7 @@
             JetCheckbox,
             JetLabel,
             JetValidationErrors,
+            Link,
         },
 
         props: {
@@ -89,7 +94,5 @@
                     })
             }
         }
-    }
+    })
 </script>
-
-

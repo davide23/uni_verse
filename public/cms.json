@@ -1,0 +1,348 @@
+{
+  "title": "UNI_VERSE",
+  "LEARN": [
+    {
+      "background_visual": "bgLEARN.png"
+    },
+    {
+      "projects": [
+        {
+          "title": "UNI_VERSE presents UNI_VERSITY",
+          "description": "UNI_VERSE is an animation studio with its roots in 3D, animation, post,- and content production, but our vision stretches further than this.",
+          "text": "<p>UNI_VERSE is an animation studio with its roots in 3D, animation, post,- and content production, but our vision stretches further than this.</p><p>We believe in open source, collaborating, experimenting and exploring new ways of pushing the digital landscape towards new realms connecting the digital with the physical world and using compelling and innovative technology while working with the most talented people in the industry.</p><p>Because we believe in sharing knowledge within our field of work, we are organising multiple series of workshops. Within these workshops we will let 3D artists and creative coders share their knowledge about animation, design and coding.</p><p>Think of software like Cinema4D, TouchDesigner, Unreal, Unity, ARKit, ARCore, Z-Brush, Blender, Substance Painter and programming languages like JavaScript , Python, C++</p>",
+          "visuals": [            
+            {
+              "name": "images",
+              "width": 3,
+              "images": [
+                {                  
+                  "path": "./content/UNI_VERSE presents UNI_VERSITY/IMG_8354_DxO.jpg",
+                  "width": 1620,
+                  "height": 1080,
+                  "video": false,
+                  "enlargefirst": true,
+                  "link": ""                 
+                },
+                {                  
+                  "path": "./content/UNI_VERSE presents UNI_VERSITY/IMG_8634_DxO.jpg",
+                  "width": 1620,
+                  "height": 1080,
+                  "video": false,
+                  "enlargefirst": true,
+                  "link": ""                 
+                },
+                {                  
+                  "path": "./content/UNI_VERSE presents UNI_VERSITY/IMG_8636_DxO.jpg",
+                  "width": 720,
+                  "height": 1080,
+                  "video": false,
+                  "enlargefirst": true,
+                  "link": ""                 
+                },
+                {                  
+                  "path": "./content/UNI_VERSE presents UNI_VERSITY/IMG_8646_DxO.jpg",
+                  "width": 1620,
+                  "height": 1080,
+                  "video": false,
+                  "enlargefirst": true,
+                  "link": ""                 
+                }
+              ]              
+            },
+            {              
+              "name": "",
+              "width": 3,
+              "images": [
+                {                  
+                  "path": "./content/UNI_VERSE presents UNI_VERSITY/IMG_8742_DxO.jpg",
+                  "width": 1620,
+                  "height": 1080,
+                  "video": false,
+                  "enlargefirst": true,
+                  "link": ""                 
+                },
+                {                  
+                  "path": "./content/UNI_VERSE presents UNI_VERSITY/TD-UNI_VERSE-1.jpg",
+                  "width": 1620,
+                  "height": 1080,
+                  "video": false,
+                  "enlargefirst": true,
+                  "link": ""                 
+                },
+                {                  
+                  "path": "./content/UNI_VERSE presents UNI_VERSITY/TD-UNI_VERSE-2.jpg",
+                  "width": 1620,
+                  "height": 1080,
+                  "video": false,
+                  "enlargefirst": true,
+                  "link": ""                 
+                },
+                {                  
+                  "path": "./content/UNI_VERSE presents UNI_VERSITY/TD-UNI_VERSE-3.jpg",
+                  "width": 1620,
+                  "height": 1080,
+                  "video": false,
+                  "enlargefirst": false,
+                  "link": "https://www.instagram.com/p/CDL5npSFjcg/"                 
+                }
+              ]              
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "PLAY": [
+    {
+      "background_visual": "bgPLAY.png"
+    },
+    {
+      "projects": [
+        {
+          "title": "RGBXYZ",
+          "description": "RGBXYZ is an Amsterdam based digital art festival focussed on providing a platform for groundbreaking contemporary digital art.",
+          "text": "<p>RGBXYZ is an Amsterdam based digital art festival focussed on providing a platform for groundbreaking contemporary digital art.</p><p>During 4 days a number of independent artists and interdisciplinary makers make up a large-scale program with a wide audience reach.</p><p>Think of projection mapping, augmented reality, virtual reality and AI art by internationally renowned and local digital artists like Isabelle Udo and Nikzad Arabshahi.</p>",
+          "visuals": [
+            {              
+              "name": "images",
+              "width": 4,
+              "images": [
+                {
+                  "path": "./content/RGBXYZ/RGBXYZ - Autogenesis V2_01.jpg",
+                  "width": 1920,
+                  "height": 1080,
+                  "video": false,
+                  "enlargefirst": true,
+                  "link": ""
+                },
+                {
+                  "path": "./content/RGBXYZ/RGBXYZ - Autogenesis V2_02.jpg",
+                  "width": 1920,
+                  "height": 1080,
+                  "video": false,
+                  "enlargefirst": true,
+                  "link": ""
+                },
+                {
+                  "path": "./content/RGBXYZ/RGBXYZ - Autogenesis V2_03.jpg",
+                  "width": 1920,
+                  "height": 1080,
+                  "video": false,
+                  "enlargefirst": true,
+                  "link": ""
+                },
+                {
+                  "path": "./content/RGBXYZ/RGBXYZ - Autogenesis V2_04.jpg",
+                  "width": 1920,
+                  "height": 1080,
+                  "video": false,
+                  "enlargefirst": true,
+                  "link": ""
+                }
+              ]              
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "WORK": [
+    {
+      "background_visual": "bgWORK.png"
+    },
+    {
+      "projects": [
+        {
+          "title": "ADIDAS 4D FWD",
+          "description": "ADIDAS 4D FWD /// DESIGNED TO MOVE YOU FORWARD… \n\n 4D Forward makes every step feel like progress. Like every cell in your shoe is pushing you to keep going.",
+          "text": "<p>ADIDAS 4D FWD /// DESIGNED TO MOVE YOU FORWARD…</p><p>4D Forward makes every step feel like progress. Like every cell in your shoe is pushing you to keep going. The 4DFWD features a 3D-printed midsole with a distinct “4D” bowtie-lattice pattern design to convert a runner’s vertical forces into forward motion. At the same time, it reduces braking forces while increasing cushioning by 23 percent to allow for more comfortable, longer runs.</p><p>In collaboration with the team at @tbwaneboko we designed the technical graphics, main campaign image and animation for the new #adidas4DFWD running shoe.</p><p>In the resulting key visual and animation we see the extreme flex of the sole compressing and shearing under pressure. A flow of arrows helps represent how downward pressure on the sole results in forward motion as well as leaving a ‘sheared state’ sole behind.</p><p>These assets are used in an array of different outputs such as print, online, video and animation. A good example of that is our assets being used in the campaign film by @buildersclub_london</p><p>Thanks to the team at @tbwaneboko for trusting us with this as well as @buildersclub_london and all the other collaborators who took part in this campaign.</p><p>UNI_VERSE<br />Creative/Art Director: @jeffbeukema<br />Producer: @daanschraauwers<br />Design: @joan_moreno_o<br />3D Animation: @geertvanhooff <br />@terphilippe<br />3D Modelling: @timvanhelsdingen @andreferwerda @bermudizmo<br />Campaign Video: @buildersclub_london</p><p>Keep moving forward!</p>",
+          "visuals": [            
+            {
+              "name": "video",
+              "width": 10,
+              "images": [
+                {                 
+                  "path": "./content/ADIDAS 4D FWD/4FWD_INNOVATION_FW21_BENEFIT_EXPRESSION_FY3963_16_9.jpg",
+                  "width": 2134,
+                  "height": 1200,
+                  "video": "vimeo", 
+                  "videowidth": 640,
+                  "videoheight": 360,                 
+                  "enlargefirst": false,
+                  "link": "399876266"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "ADIDAS UB21",
+          "description": "Adidas Ultraboost 21</p><p>SAY HELLO TO INCREDIBLE ENERGY RETURN. Try out the new augmented reality 'Checkboost' with the link in our bio,",
+          "text": "<p>Adidas Ultraboost 21</p><p>SAY HELLO TO INCREDIBLE ENERGY RETURN</p><p>Try out the new augmented reality 'Checkboost' with the link in our bio, place it anywhere you want and show us on 'the socials' with the Ultraboost21</p><p>Ultraboost 21 makes running in the rain feel as good as running by the beach.<br />Like you're jumping off thousands of mini diving boards, launching you forward.</p><p>In collaboration with the team at TBWA we created the main campaign 'Checkboost' image, animation and an augmented reality experience for the new Ultraboost21 running shoe.<br />We were tasked to get as much energy in the 'Checkboost' campaign image as the UB21 returns to you while running. What do you think? We sure feel like going outside for a run!</p><p>These assets are going to be used in an array of different outputs such as print, online, video, animation, DOOH and even in real-time in your home or 'out in the wild.</p><p>Many thanks to the entire team at TBWA for the trust, good vibes as well as Machine Molle, Builders Club, Wave Studios and Whale and all the other collaborators who put in the pieces to make this puzzle work.</p><p>UNI_VERSE<br />Creative Director: Jeff Beukema<br />Design: Geert van Hoof<br />Producer: Daan Schraauwers<br />Production Assistant: Enzo Soubra<br />3D Generalist: Danny den Hartog<br />3D/AR: Felix Panis-Jones, Terence de vries<br />3D Modeling: Luis Bermudez, Michiel Krop<br />AR development: Doruk Eker, Gianluca Di Vincenzo (Orb Amsterdam)</p>",
+          "visuals": [            
+            {
+              "name": "video",
+              "width": 10,
+              "images": [
+                {                 
+                  "path": "./content/ADIDAS UB21/Checkboost Final 16-9.jpg",
+                  "width": 1920,
+                  "height": 1080,
+                  "video": "vimeo",    
+                  "videowidth": 640,
+                  "videoheight": 360,                
+                  "enlargefirst": false,
+                  "link": "399876266"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "STEDELIJK MUSEUM",
+          "description": "Name June Paik - Stedelijk Museum The Stedelijk Museum asked us to create a Augmented Reality layer on top of the outdoor campaign of the new Nam June Paik exhibition, previously at the Tate Modern London and Museum San Fransisco.",
+          "text": "<p>Name June Paik - Stedelijk Museum</p><p>The Stedelijk Museum asked us to create a Augmented Reality layer on top of the outdoor campaign of the new Nam June Paik exhibition, previously at the Tate Modern London and Museum San Fransisco</p><p>The exhibition brings together some of Paik's iconic works. An prominent installation from the Stedelijk collection is TV-Buddha (1974), in which an 18th-century wooden Buddha appears to ‘watch’ itself on a modern television, and typifies the influence of (Zen) Buddhist philosophies on Paik’s approach to art and technology. Also on view is TV garden (1974-77), an installation with TV sets alongside living plants. Paik imagined a futuristic landscape where technology is an integral part of the natural world.We brought to live in AR the iconic TV Garden on the Museumplein, in the central hall and the TV Buddha on flyers. People could scan the QR code wich brings you to the Instagram filter, scan the poster and the art appears.</p><p>We also created several promotional videos for social.<a href='https://www.stedelijk.nl/en/exhibitions/nam-june-paik' target='_blank'>www.stedelijk.nl/en/exhibitions/nam-june-paik</a></p><p>Stedelijk Museum<br />Interim Marketing <br />Director: Natalie Bos<br />Content Manager: Femke Pijls<br />Traffic Coördinator: Merel de Zeeuw<br />Art Director: Ines Cox</p><p>UNI_VERSE<br />Creative Director: Jeff Beukema<br />3D/AR Artists: Terence de Vries, Ruolan Xi, Isabelle Udo<br />Executive Producer: Daan Schraauwers</p>",
+          "visuals": [            
+            {
+              "name": "image",
+              "width": 6,
+              "images": [
+                {                 
+                  "path": "./content/STEDELIJK MUSEUM/Museumplein_01.jpg",
+                  "width": 1620,
+                  "height": 1080,
+                  "video": false,                  
+                  "enlargefirst": true,
+                  "link": ""
+                },
+                {                 
+                  "path": "./content/STEDELIJK MUSEUM/Museumplein_05.jpg",
+                  "width": 720,
+                  "height": 1080,
+                  "video": false,                  
+                  "enlargefirst": true,
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "name": "video",
+              "width": 4,
+              "images": [
+                {                 
+                  "path": "./content/STEDELIJK MUSEUM/STEDELIJK MUSEUM01.jpg",
+                  "width": 1920,
+                  "height": 1080,
+                  "video": "vimeo", 
+                  "videowidth": 640,
+                  "videoheight": 360,                    
+                  "enlargefirst": false,
+                  "link": "399876266"
+                },
+                {                 
+                  "path": "./content/STEDELIJK MUSEUM/STEDELIJK MUSEUM02.jpg",
+                  "width": 720,
+                  "height": 1080,
+                  "video": "vimeo", 
+                  "videowidth": 640,
+                  "videoheight": 360,                   
+                  "enlargefirst": false,
+                  "link": "399876266"
+                },
+                {                 
+                  "path": "./content/STEDELIJK MUSEUM/STEDELIJK MUSEUM03.jpg",
+                  "width": 720,
+                  "height": 1080,
+                  "video": "vimeo", 
+                  "videowidth": 640,
+                  "videoheight": 360,                    
+                  "enlargefirst": false,
+                  "link": "399876266"
+                },
+                {                 
+                  "path": "./content/STEDELIJK MUSEUM/STEDELIJK MUSEUM04.jpg",
+                  "width": 592,
+                  "height": 1080,
+                  "video": "vimeo",  
+                  "videowidth": 640,
+                  "videoheight": 360,                   
+                  "enlargefirst": false,
+                  "link": "399876266"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "VANMOOF",
+          "description": "For VanMoof we did the animation and motion direction for three campaign videos & homepage to showcase the new S3 & X3 electric bike.",
+          "text": "<p>For VanMoof we did the animation and motion direction for three campaign videos & homepage to showcase the new S3 & X3 electric bike.</p><p>Production Company: Splash Studios<br />Creative Direction: Jamie Mcintyre<br />Motion Direction: Jeff Beukema<br />Sound: Audentity<br />Production: Antoine Levi, Daan Schraauwers<br />3D: Thomas de Rijk<br />Animation: Jeff Beukema, Terence de Vries, Danny Merk</p>",
+          "visuals": [            
+            {
+              "name": "video",
+              "width": 5,
+              "images": [
+                {                 
+                  "path": "./content/VANMOOF/VANMOOF01.jpg",
+                  "width": 1920,
+                  "height": 1080,
+                  "video": "vimeo",  
+                  "videowidth": 640,
+                  "videoheight": 360,               
+                  "enlargefirst": false,
+                  "link": "399876266"
+                },
+                {                 
+                  "path": "./content/VANMOOF/VANMOOF02.jpg",
+                  "width": 1080,
+                  "height": 1920,
+                  "video": "vimeo",   
+                  "videowidth": 640,
+                  "videoheight": 360,                
+                  "enlargefirst": false,
+                  "link": "399876266"
+                }
+              ]
+            },
+            {
+              "name": "",
+              "width": 5,
+              "images": [
+                {                 
+                  "path": "./content/VANMOOF/VANMOOF03.jpg",
+                  "width": 1080,
+                  "height": 1920,
+                  "video": "vimeo",  
+                  "videowidth": 640,
+                  "videoheight": 360,                 
+                  "enlargefirst": false,
+                  "link": "399876266"
+                },
+                {                 
+                  "path": "./content/VANMOOF/VANMOOF04.jpg",
+                  "width": 1080,
+                  "height": 1920,
+                  "video": "vimeo",  
+                  "videowidth": 640,
+                  "videoheight": 360,                 
+                  "enlargefirst": false,
+                  "link": "399876266"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }    
+  ],
+  "CONTACT": [
+    {
+      "text": "<p>For Business inquiries: <a href='mailto:daan@universestudio.xyz'>daan@universestudio.xyz</a></p><p>Anjeliersstraat 470 A<br />1015NL Amsterdam</p><p><a href='https://www.instagram.com/uni_verse_studio/' target='_blank'>@uni_verse_studio</a></p>"
+    }
+  ],
+  "ABOUT": [
+    {
+      "text": "<p>UNI_VERSE</p><p>is a hybrid digital creation studio.</p><p>3D/AR/VR/GVFX/AI</p><p>Our roots are in 3D, animation, post,- and content production, but our vision stretches further than this.</p><p>We believe in open source, collaborating, experimenting and exploring new ways of pushing the digital landscape towards new realms connecting the digital with the physical world and using compelling and innovative technology while working with the most talented people in the industry.</p><p>Founded by Jeff Beukema &  Daan Schraauwers</p><p>For Business inquiries: <a href='mailto:daan@universestudio.xyz'>daan@universestudio.xyz</a></p><p>Anjeliersstraat 470 A<br />1015NL Amsterdam</p><p><a href='https://www.instagram.com/uni_verse_studio/' target='_blank'>@uni_verse_studio</a></ p>"
+    }
+  ]
+}

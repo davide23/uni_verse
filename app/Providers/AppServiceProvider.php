@@ -26,6 +26,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
+        Inertia::setRootView('cms'); 
+
         Inertia::share([
             'errors' => function () {
                 return Session::get('errors')
