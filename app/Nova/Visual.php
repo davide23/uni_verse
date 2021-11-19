@@ -47,7 +47,7 @@ class Visual extends Resource
             Text::make('Name'),
             Number::make('Width'),
 
-            HasMany::make('Media'),
+            HasMany::make('MediumObjects'),
         ];
     }
 

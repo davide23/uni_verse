@@ -6,13 +6,12 @@ return [
      * The disk on which to store added files and derived images by default. Choose
      * one or more of the disks you've configured in config/filesystems.php.
      */
-    'disk_name' => env('MEDIA_DISK', 'MEDIA_DISK'),
+    'disk_name' => env('MEDIA_DISK', 'public'),
 
     /*
      * The maximum file size of an item in bytes.
      * Adding a larger file will result in an exception.
      */
-    'max_file_size' => 1024 * 1024 * 100,
 
     /*
      * This queue will be used to generate derived and responsive images.
@@ -39,13 +38,14 @@ return [
 
     /*
      * When enabled, Medium Library Pro will only process temporary uploads there were uploaded
+     * When enabled, MediumObject Library Pro will only process temporary uploads there were uploaded
      * in the same session. You can opt to disable this for stateless usage of
      * the pro components.
      */
     'enable_temporary_uploads_session_affinity' => true,
 
     /*
-     * When enabled, Medium Library pro will generate thumbnails for uploaded file.
+     * When enabled, MediumObject Library pro will generate thumbnails for uploaded file.
      */
     'generate_thumbnails_for_temporary_uploads' => true,
 

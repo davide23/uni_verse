@@ -2,21 +2,21 @@
 
 namespace App\Nova;
 
+use Ebess\AdvancedNovaMediaLibrary\Fields\Files;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Http\Requests\NovaRequest;
 
-class Medium extends Resource
+class MediumObject extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = \App\Models\Medium::class;
+    public static $model = \App\Models\MediumObject::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

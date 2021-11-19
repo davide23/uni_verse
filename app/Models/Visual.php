@@ -11,6 +11,6 @@ class Visual extends Model
     protected $hidden = array('project_id', 'id', 'created_at', 'updated_at');
 
     public function media() {
-        return $this->hasMany(Medium::class);
+        return $this->hasMany(MediumObject::class);
     }
 }
