@@ -49,6 +49,9 @@ class MediumObject extends Resource
             Number::make('height'),
 
             Text::make('Video'),
+
+            Files::make('File', 'file'),
+
             Number::make('videowidth'),
             Number::make('videoheight'),
 
