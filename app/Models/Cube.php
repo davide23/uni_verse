@@ -19,7 +19,7 @@ class Cube extends Model
             'pages',
             'pages.projects',
             'pages.projects.visuals',
-            'pages.projects.visuals.media'
+            'pages.projects.visuals.mediumObjects'
         ])->get()->toJson();
     }
 }

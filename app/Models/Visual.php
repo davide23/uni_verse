@@ -10,7 +10,7 @@ class Visual extends Model
     use HasFactory;
     protected $hidden = array('project_id', 'id', 'created_at', 'updated_at');
 
-    public function media() {
+    public function mediumobjects() {
         return $this->hasMany(MediumObject::class);
     }
 }

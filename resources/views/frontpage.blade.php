@@ -23,8 +23,7 @@
     </head>
 
     <body id="body">
-
-        <canvas id="canvas" crossorigin='anonymous' >        
+        <canvas id="canvas" crossorigin='anonymous' >
 
         </canvas>
  
@@ -282,10 +281,10 @@
                 engine.resize();
             });
 
-            function loadJSON(callback) {   
+            function loadJSON(callback) {
                 var xobj = new XMLHttpRequest();
-                xobj.overrideMimeType("application/json");            
-                xobj.open('GET', 'cms.json', true);
+                xobj.overrideMimeType("application/json");
+                xobj.open('GET', '/api/cubes/1/generate-json', true);
                 xobj.onreadystatechange = function () {
                     if (xobj.readyState == 4 && xobj.status == "200") {                    
                         callback(xobj.responseText);
@@ -296,8 +295,6 @@
 
             function initParseContent( d ){
                 cmsdata = d;
-                console.log(cmsdata);
-
                 //HOME
                 cross3D.actionManager = new BABYLON.ActionManager(scene);
                 cross3D.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, function() {
@@ -489,77 +486,73 @@
                 var fontmenu = "normal 90px Verdana";
 
                 //PLAY
-                var imgPlay = new Image();        
-                imgPlay.src = folderArea + '/tx/bgPLAY.png';
-
-                imgPlay.onload = function () {            
+                var imgPlay = new Image();
+                imgPlay.src = getPage("PLAY")["background_visual"];
+                imgPlay.onload = function () {
                     texContextPlay.drawImage(imgPlay, 0, 0, 2000, 2000);  
                     texContextPlay.textAlign = "right";
-                    dynamicTexPlay.update();                          
-                    dynamicTexPlay.drawText("PLAY", 1000, 1900, font, "#377b45", null, true, true);                            
+                    dynamicTexPlay.update();
+                    dynamicTexPlay.drawText("PLAY", 1000, 1900, font, "#377b45", null, true, true);
                     
-                    for (let i = 0; i < cmsdata["PLAY"][1]["projects"].length; i++) {                                        
+                    for (let i = 0; i < getPage('PLAY')["projects"].length; i++) {
                         var verticalspacing = 120 * i;
-                        dynamicTexPlay.drawText(cmsdata["PLAY"][1]["projects"][i]["title"], 1900, (160 + verticalspacing), fontmenu, "#377b45", null, true, true);
+                        dynamicTexPlay.drawText(getPage("PLAY")["projects"][i]["title"], 1900, (160 + verticalspacing), fontmenu, "#377b45", null, true, true);
 
                         var menubutt = BABYLON.MeshBuilder.CreatePlane( ("menubutt" + i), { width: 7.6, height: 0.5, faceColors: BABYLON.Color3.Red() }, scene);
                         menubutt.rotation = new BABYLON.Vector3(0, 0, 90 * (Math.PI / 180));
                         menubutt.position = new BABYLON.Vector3((1 + (i / 2)), -4.7, -0.1);                    
                         menubutt.actionManager = new BABYLON.ActionManager(scene);
                         menubutt.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, function() {
-                            openCube( "PLAY", cmsdata["PLAY"][1]["projects"][i] );                        
+                            openCube("PLAY", getPage("PLAY")["projects"][i]);
                         }));                     
                     }
                 }
 
                 //WORK
-                var imgWork = new Image();        
-                imgWork.src = folderArea + '/tx/bgWORK.png';
-
-                imgWork.onload = function () {            
+                var imgWork = new Image();
+                imgWork.src = folderArea + getPage("WORK")["background_visual"];
+                imgWork.onload = function () {
                     texContextWork.drawImage(imgWork, 0, 0, 2000, 2000);  
                     texContextWork.textAlign = "right";
                     dynamicTexWork.update();                          
                     dynamicTexWork.drawText("WORK", 1350, 1900, font, "#2554d9", null, true, true);                                  
 
-                    for (let i = 0; i < cmsdata["WORK"][1]["projects"].length; i++) {
-                        //console.log("project: " + cmsdata["WORK"][1]["projects"][i]["title"]);
+                    for (let i = 0; i < getPage("WORK")["projects"].length; i++) {
                         var verticalspacing = 120 * i;
-                        dynamicTexWork.drawText(cmsdata["WORK"][1]["projects"][i]["title"], 1900, (160 + verticalspacing), fontmenu, "#2554d9", null, true, true);
+                        dynamicTexWork.drawText(getPage("WORK")["projects"][i]["title"], 1900, (160 + verticalspacing), fontmenu, "#2554d9", null, true, true);
 
                         var menubutt = BABYLON.MeshBuilder.CreatePlane( ("menubutt" + i), { width: 7.6, height: 0.5, faceColors: BABYLON.Color3.Red() }, scene);
                         menubutt.rotation = new BABYLON.Vector3(90 * (Math.PI / 180), 0, 0);
                         menubutt.position = new BABYLON.Vector3(-4.7, 0.1, (-1 - (i / 2)));                    
                         menubutt.actionManager = new BABYLON.ActionManager(scene);
                         menubutt.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, function() {
-                            openCube( "WORK", cmsdata["WORK"][1]["projects"][i] );                        
+                            openCube("WORK", getPage("WORK")["projects"][i]);
                         }));  
                     }
-                }  
+                }
 
                 //LEARN
-                var imgLearn = new Image();        
-                imgLearn.src = folderArea + '/tx/bgLEARN.png';
-
-                imgLearn.onload = function () {            
-                    texContextLearn.drawImage(imgLearn, 0, 0, 2000, 2000);  
+                var imgLearn = new Image();
+                imgLearn.src = folderArea + getPage("LEARN")["background_visual"];
+                imgLearn.onload = function () {
+                    texContextLearn.drawImage(imgLearn, 0, 0, 2000, 2000);
                     texContextLearn.textAlign = "right";
-                    dynamicTexLearn.update();                          
-                    dynamicTexLearn.drawText("LEARN", 1250, 1900, font, "#c00029", null, true, true);  
+                    dynamicTexLearn.update();
+                    dynamicTexLearn.drawText("LEARN", 1250, 1900, font, "#c00029", null, true, true);
                     
-                    for (let i = 0; i < cmsdata["LEARN"][1]["projects"].length; i++) {                                        
+                    for (let i = 0; i < getPage("LEARN")["projects"].length; i++) {
                         var verticalspacing = 120 * i;
-                        dynamicTexLearn.drawText(cmsdata["LEARN"][1]["projects"][i]["title"], 1900, (160 + verticalspacing), fontmenu, "#c00029", null, true, true);
+                        dynamicTexLearn.drawText(getPage("LEARN")["projects"][i]["title"], 1900, (160 + verticalspacing), fontmenu, "#c00029", null, true, true);
 
                         var menubutt = BABYLON.MeshBuilder.CreatePlane( ("menubutt" + i), { width: 7.6, height: 0.5, faceColors: BABYLON.Color3.Red() }, scene);
                         menubutt.rotation = new BABYLON.Vector3(0, -90 * (Math.PI / 180), 90 * (Math.PI / 180));
                         menubutt.position = new BABYLON.Vector3(0.1, 4.7, (1 + (i / 2)));                    
                         menubutt.actionManager = new BABYLON.ActionManager(scene);
                         menubutt.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, function() {
-                            openCube( "LEARN", cmsdata["LEARN"][1]["projects"][i] );
+                            openCube("LEARN", getPage("LEARN")["projects"][i]);
                         })); 
                     }
-                } 
+                }
 
                 var frametop = document.createElement("frametop");
                 frametop.setAttribute("id", "frametop");
@@ -582,10 +575,15 @@
             }
 
             function removeHTML(i) {
-                console.log("remove: "+ i);
                 document.getElementById(i).outerHTML = ""
             }
 
+            function getPage(page_name) {
+                for(let index = 0; index < cmsdata[0]["pages"].length; index++){
+                    if (cmsdata[0]["pages"][index]["name"] == page_name)
+                        return cmsdata[0]["pages"][index];
+                }
+            }
 
             function navigateCube(destination){     
 
@@ -643,39 +641,35 @@
                 */
                 
                 if(destination == "CONTACT"){                                
-                    openTEXT( cmsdata["CONTACT"][0]["text"] );
+                    openTEXT( cmsdata["pages"]["CONTACT"][0]["text"] );
                 }
                 else if(destination == "ABOUT"){                
-                    openTEXT( cmsdata["ABOUT"][0]["text"] );
+                    openTEXT( cmsdata["pages"]["ABOUT"][0]["text"] );
                 }            
             }
 
             function openCube(c, dataobj){
 
                 if(camera.activeAnimations == 0) {
+                    cameraController.moveTo('PROJECT');
+                    var crdnts = [9,9,4];
+                    //moveCenter( new BABYLON.Vector3(-9, 3, -5.5) );
 
-                console.log( dataobj["title"] );
-                
-                cameraController.moveTo('PROJECT');
-
-
-                var crdnts = [9,9,4];         
-                //moveCenter( new BABYLON.Vector3(-9, 3, -5.5) ); 
-
-                if(c == "WORK"){            
-                    openContent(crdnts, dataobj, "WORK", "#2554d9");
+                    if(c == "WORK"){
+                        openContent(crdnts, dataobj, "WORK", "#2554d9");
+                    }
+                    else if(c == "LEARN"){
+                        openContent(crdnts, dataobj, "LEARN", "#c00029");
+                    }
+                    else if(c == "PLAY"){
+                        openContent(crdnts, dataobj, "PLAY", "#377b45");
+                    }
                 }
-                else if(c == "LEARN"){            
-                    openContent(crdnts, dataobj, "LEARN", "#c00029");
-                }
-                else if(c == "PLAY"){                
-                    openContent(crdnts, dataobj, "PLAY", "#377b45");
-                }      
-
-                }      
             }
 
             function openContent(crdnts, dataobj, tit, txtColor){
+                console.log(dataobj);
+                console.log(crdnts);
 
                 setTimeout(function(){ 
                     let easing = new BABYLON.CubicEase();
@@ -729,17 +723,19 @@
 
                 let contentLength = 0;          
 
-                for(let c = 0; c < dataobj["visuals"].length; c++){                
+                for(let c = 0; c < dataobj["visuals"].length; c++){
+                    console.log('diocaneee');
+
                     var columnwidth = dataobj["visuals"][c]["width"]; 
                     var columnname = dataobj["visuals"][c]["name"]; 
                     var offsetH = 0;
                     var offsetV = 1; 
 
                     if(c == 0){
-                            offsetH = 3;
+                        offsetH = 3;
                     }
                     else if(c == 1){
-                        offsetH = 4 + dataobj["visuals"][0]["width"];
+                        offsetH = 4 + dataobj["visuals"][c]["width"];
                     }
                     else if (c == 2){
                         offsetH = 5 + dataobj["visuals"][0]["width"] + dataobj["visuals"][1]["width"];
@@ -769,15 +765,16 @@
                     //dynamicTex.drawText(dataobj["visuals"][c]["name"], 10, 50, "bold 40px Helvetica", txtColor, "transparent", true);   
                     //impossible to rotate text within texture, so if we want it to be a whole, text orientation of column names should be vertical to
 
-                    for(let i = 0; i < dataobj["visuals"][c]["images"].length; i++){                    
-                        var imagewidth = dataobj["visuals"][c]["images"][i]["width"]; 
-                        var imageheight = dataobj["visuals"][c]["images"][i]["height"];
+                    for(let i = 0; i < dataobj["visuals"][c]["medium_objects"].length; i++){
+                        var imagewidth = dataobj["visuals"][c]["medium_objects"][i]["width"]/10;
+                        var imageheight = dataobj["visuals"][c]["medium_objects"][i]["height"]/10;
                         var planewidth = columnwidth;
                         var planeratio = imagewidth / columnwidth;
                         var planeheight = imageheight / planeratio;                    
                         
                         var matImg = new BABYLON.StandardMaterial("texIMG", scene);
-                        matImg.diffuseTexture = new BABYLON.Texture( folderArea + dataobj["visuals"][c]["images"][i]["path"] , scene);
+                        console.log(dataobj["visuals"][c]["medium_objects"][i]["path"]);
+                        matImg.diffuseTexture = new BABYLON.Texture( folderArea + dataobj["visuals"][c]["medium_objects"][i]["path"] , scene);
                         matImg.specularColor = new BABYLON.Color3(0, 0, 0);
                         matImg.backFaceCulling = false;                    
                         const planeImg = BABYLON.MeshBuilder.CreatePlane("planeImg" + i, { width: planewidth, height: planeheight }, scene);
@@ -787,7 +784,7 @@
                         planeImg.parent = grp;                             
                         planeImg.actionManager = new BABYLON.ActionManager(scene);
                         planeImg.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, function() {
-                            openIMG( dataobj["visuals"][c]["images"][i] );
+                            openIMG( dataobj["visuals"][c]["medium_objects"][i] );
                         }));           
                         
                         offsetV += planeheight + 1;                    
