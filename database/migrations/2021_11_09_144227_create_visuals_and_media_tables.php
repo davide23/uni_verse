@@ -22,25 +22,6 @@ class CreateVisualsAndMediaTables extends Migration
             $table->bigInteger('project_id')->nullable()->unsigned();
             $table->foreign('project_id')->references('id')->on('projects')->onDelete('cascade');
         });
-
-        Schema::create('media', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-
-            $table->string('path')->nullable(true);
-            $table->integer('width')->nullable(true);
-            $table->integer('height')->nullable(true);
-
-            $table->string('video')->nullable(true);
-            $table->integer('videowidth')->nullable(true);
-            $table->integer('videoheight')->nullable(true);
-
-            $table->boolean('enlargefirst')->nullable(true);
-            $table->string('link')->nullable(true);
-
-            $table->bigInteger('visual_id')->nullable()->unsigned();
-            $table->foreign('visual_id')->references('id')->on('visuals')->onDelete('cascade');
-        });
     }
 
     /**
@@ -50,7 +31,6 @@ class CreateVisualsAndMediaTables extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('media');
         Schema::dropIfExists('visuals');
     }
 }

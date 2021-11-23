@@ -2,11 +2,20 @@
 
 namespace App\Nova;
 
+use Ebess\AdvancedNovaMediaLibrary\Fields\Files;
+use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
+use Ebess\AdvancedNovaMediaLibrary\Fields\Media;
+use Epartment\NovaDependencyContainer\NovaDependencyContainer;
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\KeyValue;
+use Laravel\Nova\Fields\Markdown;
 use Laravel\Nova\Fields\Number;
+use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Visual extends Resource
 {
@@ -47,7 +56,41 @@ class Visual extends Resource
             Text::make('Name'),
             Number::make('Width'),
 
-            HasMany::make('MediumObjects'),
+//            Select::make('Visual Type')
+//                ->options([
+//                    "video" => "Video",
+//                    "image" => "Image",
+//                    "vimeo" => "Vimeo",
+//                ])->sortable()->fillUsing(function(NovaRequest $request, $model, $attribute, $requestAttribute) {
+                    /*
+                        $request->input('unique_key_for_model') // Value of the field
+                        $model->unique_key_for_model // DOES NOT exists, so no errors happens
+                    */
+                    // or just return null;
+//                    return null;
+//                }),
+
+//            NovaDependencyContainer::make([
+//                Images::make('Images', 'visual_media_objects') // second parameter is the media collection name
+//                ->conversionOnPreview('thumb') // conversion used to display the "original" image
+//                ->conversionOnDetailView('thumb') // conversion used on the model's view
+//                ->conversionOnIndexView('thumb') // conversion used to display the image on the model's index page
+//                ->conversionOnForm('thumb') // conversion used to display the image on the model's form
+//                ->fullSize() // full size column
+//                ->withResponsiveImages(),
+//            ])->dependsOn('visual_type', 'image'),
+//
+//            NovaDependencyContainer::make([
+//                Media::make('Video', 'visual_media_objects') // second parameter is the media collection name
+//                ->conversionOnPreview('thumb') // conversion used to display the "original" image
+//                ->conversionOnDetailView('thumb') // conversion used on the model's view
+//                ->conversionOnIndexView('thumb') // conversion used to display the image on the model's index page
+//                ->conversionOnForm('thumb') // conversion used to display the image on the model's form
+//                ->fullSize() // full size column
+//                ->withResponsiveImages(),
+//            ])->dependsOn('visual_type', 'video'),
+//
+
         ];
     }
 

@@ -48,7 +48,7 @@ class Page extends Resource
 
             Text::make('Name'),
 
-            Images::make('Background Visual', 'background_visual') // second parameter is the media collection name
+            Images::make('Background Visual', 'background_visual_object') // second parameter is the media collection name
                 ->conversionOnPreview('thumb') // conversion used to display the "original" image
                 ->conversionOnDetailView('thumb') // conversion used on the model's view
                 ->conversionOnIndexView('thumb') // conversion used to display the image on the model's index page
