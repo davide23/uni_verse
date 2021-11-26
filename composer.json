@@ -40,6 +40,8 @@
         "nikaia/nova-rating-field": "^1.0",
         "optimistdigital/nova-multiselect-field": "^2.3",
         "optimistdigital/nova-sortable": "^2.4",
+        "pbmedia/laravel-ffmpeg": "^7.5",
+        "php-ffmpeg/php-ffmpeg": "^0.18.0",
         "satoved/percentage": "^0.0.2",
         "saumini/count": "^1.0",
         "spatie/eloquent-sortable": "3.11.0",

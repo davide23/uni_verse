@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Visual;
+use App\Models\Column;
 use Illuminate\Http\Request;
 
 class VisualController extends Controller
@@ -41,10 +41,10 @@ class VisualController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Visual  $visual
+     * @param  \App\Models\Column  $visual
      * @return \Illuminate\Http\Response
      */
-    public function show(Visual $visual)
+    public function show(Column $visual)
     {
         //
     }
@@ -52,10 +52,10 @@ class VisualController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Visual  $visual
+     * @param  \App\Models\Column  $visual
      * @return \Illuminate\Http\Response
      */
-    public function edit(Visual $visual)
+    public function edit(Column $visual)
     {
         //
     }
@@ -64,10 +64,10 @@ class VisualController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Visual  $visual
+     * @param  \App\Models\Column  $visual
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Visual $visual)
+    public function update(Request $request, Column $visual)
     {
         //
     }
@@ -75,10 +75,10 @@ class VisualController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Visual  $visual
+     * @param  \App\Models\Column  $visual
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Visual $visual)
+    public function destroy(Column $visual)
     {
         //
     }

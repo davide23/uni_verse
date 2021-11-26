@@ -23,7 +23,7 @@ class Cube extends Model implements HasMedia
         return $this->with([
             'pages',
             'pages.projects',
-            'pages.projects.visuals',
+            'pages.projects.columns',
         ])->get()->toJson();
     }
 

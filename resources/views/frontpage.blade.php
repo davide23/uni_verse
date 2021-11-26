@@ -832,9 +832,9 @@
 
                 let contentLength = 0;          
 
-                for(let c = 0; c < dataobj["visuals"].length; c++){
-                    var columnwidth = dataobj["visuals"][c]["width"];
-                    var columnname = dataobj["visuals"][c]["name"]; 
+                for(let c = 0; c < dataobj["columns"].length; c++){
+                    var columnwidth = dataobj["columns"][c]["width"];
+                    var columnname = dataobj["columns"][c]["name"];
                     var offsetH = 0;
                     var offsetV = 1; 
 
@@ -842,10 +842,10 @@
                         offsetH = 3;
                     }
                     else if(c == 1){
-                        offsetH = 4 + dataobj["visuals"][c]["width"];
+                        offsetH = 4 + dataobj["columns"][c]["width"];
                     }
                     else if (c == 2){
-                        offsetH = 5 + dataobj["visuals"][0]["width"] + dataobj["visuals"][1]["width"];
+                        offsetH = 5 + dataobj["columns"][0]["width"] + dataobj["columns"][1]["width"];
                     }
                     
                     contentLength = contentLength + columnwidth;
@@ -866,20 +866,20 @@
                     columnTitlePlane.material = material3;  
                     BABYLON.Tags.AddTagsTo(columnTitlePlane, "deleteMe");
                     columnTitlePlane.parent = grp;        
-                    dynamicTex3.drawText(dataobj["visuals"][c]["name"], 10, 50, "normal 60px Helvetica", txtColor, "transparent", true);
+                    dynamicTex3.drawText(dataobj["columns"][c]["name"], 10, 50, "normal 60px Helvetica", txtColor, "transparent", true);
                     //dynamicTex3.scaling = new BABYLON.Vector3(5,5,5);
                     
                     //dynamicTex.drawText(dataobj["visuals"][c]["name"], 10, 50, "bold 40px Helvetica", txtColor, "transparent", true);   
                     //impossible to rotate text within texture, so if we want it to be a whole, text orientation of column names should be vertical to
 
-                    for(let i = 0; i < dataobj["visuals"][c]["visual_media"].length; i++){
-                        var imagewidth = dataobj["visuals"][c]["visual_media"][i]["width"]/10;
-                        var imageheight = dataobj["visuals"][c]["visual_media"][i]["height"]/10;
+                    for(let i = 0; i < dataobj["columns"][c]["visual_media"].length; i++){
+                        var imagewidth = dataobj["columns"][c]["visual_media"][i]["width"]/10;
+                        var imageheight = dataobj["columns"][c]["visual_media"][i]["height"]/10;
                         var planewidth = columnwidth;
                         var planeratio = imagewidth / columnwidth;
                         var planeheight = imageheight / planeratio;
                         var matImg = new BABYLON.StandardMaterial("texIMG", scene);
-                        matImg.diffuseTexture = new BABYLON.Texture( folderArea + dataobj["visuals"][c]["visual_media"][i]["path"] , scene);
+                        matImg.diffuseTexture = new BABYLON.Texture( folderArea + dataobj["columns"][c]["visual_media"][i]["thumb"] , scene);
                         matImg.specularColor = new BABYLON.Color3(0, 0, 0);
                         matImg.backFaceCulling = false;                    
                         const planeImg = BABYLON.MeshBuilder.CreatePlane("planeImg" + i, { width: planewidth, height: planeheight }, scene);
@@ -890,7 +890,7 @@
                         planeImg.actionManager = new BABYLON.ActionManager(scene);
                         planeImg.actionManager.registerAction(
                             new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, function() {
-                            openIMG( dataobj["visuals"][c]["visual_media"][i] );
+                            openIMG( dataobj["columns"][c]["visual_media"][i] );
                         }));           
                         
                         offsetV += planeheight + 1;                    
@@ -948,60 +948,37 @@
                 msg.innerHTML = addHTML;
                 document.body.appendChild(msg);
             }
-            function openIMG(iObj){                        
-                if( iObj["enlargefirst"] == true ){                
-                    var ratioWidth = iObj["width"] / window.innerWidth;
-                    var ratioHeight = iObj["height"] / window.innerHeight;                
-                    var aspectRatio = iObj["width"] / iObj["height"];                
-                    
-                    if(ratioWidth > ratioHeight){                    
-                        var w = window.innerWidth - 66;
-                        var h = Math.floor(w / aspectRatio) - 66;
-                    }
-                    else{                    
-                        var h = window.innerHeight - 66;
-                        var w = Math.floor(h * aspectRatio) - 66;
-                    }                
-                    
-                    var openedIMG = document.createElement("div");
-                    openedIMG.setAttribute("id", "layover");                    
-                    var innermost = "<div id='curtain' onclick=\"removeHTML('layover')\"></div>";
-                    innermost += "<div id='openedIMG' style=\"margin-left: " + Math.floor((-1 * w) / 2) + "px; margin-top: " + Math.floor((-1 * h) / 2) + "px; width: " + w + "px; height:" + h + "px;\">";                
-                    innermost += "<img src='" + folderArea + iObj["path"] + "'>";
-                    innermost += "</div>";
-                    openedIMG.innerHTML = innermost;
-                    document.body.appendChild(openedIMG); 
+            function openIMG(iObj){
+                var ratioWidth = iObj["width"] / window.innerWidth;
+                var ratioHeight = iObj["height"] / window.innerHeight;
+                var aspectRatio = iObj["width"] / iObj["height"];
 
+                if(ratioWidth > ratioHeight){
+                    var w = window.innerWidth - 66;
+                    var h = Math.floor(w / aspectRatio) - 66;
+                }
+                else{
+                    var h = window.innerHeight - 66;
+                    var w = Math.floor(h * aspectRatio) - 66;
+                }
+                var openedIMG = document.createElement("div");
+                openedIMG.setAttribute("id", "layover");
+                var innermost = "<div id='curtain' onclick=\"removeHTML('layover')\"></div>";
+                innermost += "<div id='openedIMG' style=\"margin-left: " + Math.floor((-1 * w) / 2) + "px; margin-top: " + Math.floor((-1 * h) / 2) + "px; width: " + w + "px; height:" + h + "px;\">";
+
+                if( iObj["video"] == false ){
+                    innermost += "<img src='" + folderArea + iObj["path"] + "'>";
+                }
+                else if( iObj["video"] == true ){
+                    innermost += '<video controls> <source src=' + iObj["path"]  + ' type="video/mp4"></video>';
                 }
                 else if( iObj["video"] == "vimeo" ){
-                    var ratioWidth = iObj["videowidth"] / window.innerWidth;
-                    var ratioHeight = iObj["videoheight"] / window.innerHeight;                
-                    var aspectRatio = iObj["videowidth"] / iObj["videoheight"];                
-                    
-                    if(ratioWidth > ratioHeight){                    
-                        var w = window.innerWidth - 66;
-                        var h = Math.floor(w / aspectRatio) - 66;
-                    }
-                    else{                                        
-                        var h = window.innerHeight - 66;
-                        var w = Math.floor(h * aspectRatio) - 66;
-                    }                 
-                    
-                    var embedVimeo = document.createElement("div");
-                    embedVimeo.setAttribute("id", "layover");                    
-                    var innermost = "<div id='curtain' onclick=\"removeHTML('layover')\"></div>";
-                    innermost += "<div id='embedVimeo' style=\"margin-left: " + Math.floor((-1 * w) / 2) + "px; margin-top: " + Math.floor((-1 * h) / 2) + "px; width: " + w + "px; height:" + h + "px;\">";
                     innermost += "<iframe src='https://player.vimeo.com/video/" + iObj["link"] + "' width='" + w + "' height='" + h + "' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>";
-                    innermost += "</div>";
-                    embedVimeo.innerHTML = innermost;
-                    document.body.appendChild(embedVimeo); 
                 }
-                else if( iObj["video"] == "youtube" ){
-                    console.log("YOUTUBE CODE:  " + iObj["link"] ); 
-                }
-                else if( iObj["link"] != ""){
-                    console.log("SOON TO BE OPEN:  " + iObj["link"] ); 
-                }
+
+                innermost += "</div>";
+                openedIMG.innerHTML = innermost;
+                document.body.appendChild(openedIMG);
             }
             function moveCenter(t) {
                 BABYLON.Animation.CreateAndStartAnimation('movecenter', center, "position", 60, 120, whereYouAt, t, 0, ease); 
@@ -1017,9 +994,9 @@
                 var rotationMode = false;
 
                 const plane =
-                    BABYLON.Plane.FromPositionAndNormal(BABYLON.Vector3.Zero(), BABYLON.Axis.Y);    
+                    BABYLON.Plane.FromPositionAndNormal(BABYLON.Vector3.Zero(), BABYLON.Axis.Y);
                 const inertialPanning = BABYLON.Vector3.Zero();  // doet iets met zoom snelheid scroll
-                
+
                 const wheelPrecisionFn = () => {
                     camera.wheelPrecision = 1 / camera.radius * 1000;
                 };
