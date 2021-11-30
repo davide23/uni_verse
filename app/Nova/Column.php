@@ -49,7 +49,11 @@ class Column extends Resource
             Number::make('Width'),
 
             Images::make('Images', 'visual_media_objects'), // second parameter is the media collection name
-            Media::make('Video', 'visual_media_video'), // second parameter is the media collection name
+            Media::make('Video', 'visual_media_video')
+                ->conversionOnPreview('video_thumb') // conversion used to display the "original" image
+                ->conversionOnDetailView('video_thumb') // conversion used on the model's view
+                ->conversionOnIndexView('video_thumb') // conversion used to display the image on the model's index page
+                ->conversionOnForm('video_thumb'), // conversion used to display the image on the model's form
         ];
     }
 
