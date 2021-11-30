@@ -740,8 +740,8 @@
                 if(destination == "CONTACT"){
                     openTEXT(getPage("CONTACT")["popup_text"]);
                 }
-                else if(destination == "ABOUT"){                
-                    openTEXT( cmsdata["pages"]["ABOUT"]["popup_text"] );
+                else if(destination == "ABOUT"){
+                    openTEXT(getPage("ABOUT")["popup_text"]);
                 }            
             }
             function openCube(c, dataobj){
