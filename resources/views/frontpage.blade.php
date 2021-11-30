@@ -61,7 +61,7 @@
                     domain,
                     scene,
                     ['jpg', 'jpeg'],
-                    true,
+                    false,
                     cubeImages
                 );
                 matQ.reflectionTexture.coordinatesMode = BABYLON.Texture.PLANAR_MODE;
@@ -97,7 +97,7 @@
                     domain,
                     scene,
                     ['jpg', 'jpeg'],
-                    true,
+                    false,
                     cubeImages
                 );
                 skyboxMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
@@ -114,7 +114,7 @@
                     domain,
                     scene,
                     ['jpg', 'jpeg'],
-                    false,
+                    true,
                     projectCubeImages
                 );
                 skyboxProjectMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
@@ -129,7 +129,7 @@
                     domain,
                     scene,
                     ['jpg', 'jpeg'],
-                    false,
+                    true,
                     projectCubeImages
                 );
                 matProject.reflectionTexture.coordinatesMode = BABYLON.Texture.PLANAR_MODE;
@@ -152,7 +152,7 @@
                     domain,
                     scene,
                     ['jpg', 'jpeg'],
-                    true,
+                    false,
                     cubeImages
                 );
                 matCross.reflectionTexture.coordinatesMode = BABYLON.Texture.PLANAR_MODE;
@@ -383,7 +383,7 @@
                 materialWork.diffuseTexture = dynamicTexWork;
                 materialWork.reflectionTexture = new BABYLON.MirrorTexture("ImgWork", 400, scene, true);
                 materialWork.reflectionTexture.mirrorPlane = new BABYLON.Plane(0, -1.0, 0, -2.0);
-                materialWork.reflectionTexture.renderList = [skybox. skyboxProject];
+                materialWork.reflectionTexture.renderList = [skybox, skyboxProject];
                 materialWork.reflectionTexture.level = 0.2;
 
                 menuWorkPlane = BABYLON.MeshBuilder.CreatePlane("menuWorkPlane", {height: 8, width: 8}, scene);
@@ -761,15 +761,10 @@
                 }
             }
             function openContent(crdnts, dataobj, tit, txtColor){
-                setTimeout(function(){
-                    let easing = new BABYLON.CubicEase();
-                    easing.setEasingMode(BABYLON.EasingFunction.EASINGMODE_EASEINOUT);
-                    BABYLON.Animation.CreateMergeAndStartAnimation('spinTo', skyboxProject, 'visibility', 60, 35, 0, 1, 0, easing);                     
-                }, 1500);
-            
                 projRotation = new BABYLON.Vector3(-90 * (Math.PI / 180), -180 * (Math.PI / 180), 0);
                 descriptionText = dataobj["text"];
-                //DISPOSAL            
+
+                //DISPOSAL
                 if(contentBG){
                     contentBG.dispose();
                 }
