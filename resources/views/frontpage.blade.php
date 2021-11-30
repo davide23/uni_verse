@@ -28,8 +28,31 @@
 
             setTimeout(function() { initGlobalVariables() }, 1000);
             setTimeout(function() { initScene() }, 1000);
+            setTimeout(function() { initActions() }, 1000);
             setTimeout(function() { initParseContent() }, 1000);
 
+            function initActions() {
+                onPointerDown = function(evt, pickResult) {
+                    isFingerDown = true;
+                }
+                // back to orginal state
+                onPointerUp = function(evt, pickResult) {
+                    isFingerDown = false;
+                    if(camera.activeAnimations == 0) {
+                        if(cameraController.currentDestination == "PROJECT") {
+                            if(camera.beta != 90 * (Math.PI / 180))
+                                cameraController.moveTo('PROJECT');
+                        }
+                    }
+                };
+
+                renderLoop = function () {scene.render();}
+                engine.runRenderLoop(renderLoop);
+
+                window.addEventListener("resize", function () {
+                    engine.resize();
+                });
+            }
             function initGlobalVariables() {
                 // Need to be globally defined in order to be reset/cleared
                 $.ajaxSetup({cache: true});
@@ -254,30 +277,6 @@
 
                 cameraController.moveTo('HOME');
                 addControls(scene, camera);
-
-                onPointerDown = function(evt, pickResult) {
-                    isFingerDown = true;
-                }
-                // back to orginal state
-                onPointerUp = function(evt, pickResult) {
-                    isFingerDown = false;
-                    setTimeout(function(){
-                        if(camera.activeAnimations == 0) {
-                            if(cameraController.currentDestination == "PROJECT") {
-                                if(camera.beta != 90 * (Math.PI / 180))
-                                    cameraController.moveTo('PROJECT');
-                            }
-                        }
-                    }, 100);
-                };
-
-                renderLoop = function () {scene.render();}
-                engine.runRenderLoop(renderLoop);
-
-                window.addEventListener("resize", function () {
-                    engine.resize();
-                });
-
             }
             async function loadCMS() {
                 return loadJSON("/api/cubes/2/generate-json");
