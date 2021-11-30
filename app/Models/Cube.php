@@ -53,25 +53,24 @@ class Cube extends Model implements HasMedia
 
     public function getCubeImagesAttribute()
     {
-        return [
-            $this->getFirstMedia('image_nx')->getFullUrl(),
-            $this->getFirstMedia('image_ny')->getFullUrl(),
-            $this->getFirstMedia('image_nz')->getFullUrl(),
-            $this->getFirstMedia('image_px')->getFullUrl(),
-            $this->getFirstMedia('image_py')->getFullUrl(),
-            $this->getFirstMedia('image_pz')->getFullUrl(),
-        ];
+        return $this->getMediaFromLabels(['image_nx', 'image_ny', 'image_nz', 'image_px', 'image_py', 'image_pz']);
     }
 
     public function getProjectCubeImagesAttribute()
     {
-        return [
-            $this->getFirstMedia('image_project_nx')->getFullUrl(),
-            $this->getFirstMedia('image_project_ny')->getFullUrl(),
-            $this->getFirstMedia('image_project_nz')->getFullUrl(),
-            $this->getFirstMedia('image_project_px')->getFullUrl(),
-            $this->getFirstMedia('image_project_py')->getFullUrl(),
-            $this->getFirstMedia('image_project_pz')->getFullUrl(),
-        ];
+        return $this->getMediaFromLabels([
+            'image_project_nx', 'image_project_ny', 'image_project_nz',
+            'image_project_px', 'image_project_py', 'image_project_pz'
+        ]);
+    }
+
+    public function getMediaFromLabels($labels) {
+        $media = array();
+        foreach ($labels as $label) {
+            $visual = $this->getFirstMedia($label);
+            if ($visual)
+                array_push($media, $visual->getFullUrl());
+        }
+        return $media;
     }
 }
