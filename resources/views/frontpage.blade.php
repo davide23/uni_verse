@@ -280,7 +280,7 @@
 
             }
             async function loadCMS() {
-                return loadJSON("/api/cubes/2/generate-json");
+                return loadJSON("/api/cubes/1/generate-json");
             }
             async function loadJSON(url) {
                 await fetch(url)
@@ -560,7 +560,6 @@
                 framebottom.innerHTML = "<a href=\"javascript:navigateCube('CONTACT')\">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"javascript:navigateCube('ABOUT')\">ABOUT</a>";
 
                 scene.registerBeforeRender(function () {
-
                     var offset = 0;
 
                     // 2a work
@@ -569,7 +568,6 @@
                     // 3a learn mirror
                     // 3b play
                     // 2b play mirror
-
                     cameraBox.position = camera.position;
                     camera.upperAlphaLimit = null;
                     camera.lowerAlphaLimit = null;
@@ -582,26 +580,15 @@
                         camera.attachControl(canvas, true);
 
                         if(cameraController.currentDestination == "PROJECT") {
-
                             camera.lowerBetaLimit = 120 * (Math.PI / 180);
                             camera.lowerAlphaLimit = 80 * (Math.PI / 180);
                             camera.upperBetaLimit = 140 * (Math.PI / 180);
                             camera.upperAlphaLimit = 100 * (Math.PI / 180);
-
-
-                            //if(camera.beta != 90 * (Math.PI / 180))
-                            //   cameraController.moveTo('PROJECT');
-
-                            /*
-                                camera.spinTo("alpha", 90 * (Math.PI / 180), 60);
-                                camera.spinTo("beta", 129 * (Math.PI / 180), 60);
-                            */
                         }
 
                         if(cameraController.currentDestination == "PLAY") {
-
                             if (cameraBox.intersectsMesh(plane2a) && cameraBox.intersectsMesh(plane2b)) {
-                                camera.lowerBetaLimit =  1;
+                                camera.lowerBetaLimit = 1;
                                 console.log("2a2b")
                             }
                             else if (cameraBox.intersectsMesh(plane3a) && cameraBox.intersectsMesh(plane1b)) {
@@ -641,10 +628,9 @@
                         }
 
                         if(cameraController.currentDestination == "WORK" || cameraController.currentDestination == "HOME") {
-
                             if (cameraBox.intersectsMesh(plane2a) && cameraBox.intersectsMesh(plane1a)) {
-                                camera.upperBetaLimit =  camera.beta;
-                                camera.lowerAlphaLimit =camera.alpha;
+                                camera.upperBetaLimit = camera.beta;
+                                camera.lowerAlphaLimit = camera.alpha;
                                 // work hoek
                                 console.log("2a2b")
                             }
@@ -655,7 +641,7 @@
                             }
                             else if (cameraBox.intersectsMesh(plane1a) && cameraBox.intersectsMesh(plane1b)) {
                                 camera.lowerBetaLimit = camera.beta;
-                                camera.lowerAlphaLimit =camera.alpha;
+                                camera.lowerAlphaLimit = camera.alpha;
                                 console.log("1a21b")
                             }
                             else if (cameraBox.intersectsMesh(plane2a)) {
@@ -684,9 +670,7 @@
                                 camera.upperBetaLimit =  2.5;
                             }
                         }
-
                         if(cameraController.currentDestination == "LEARN") {
-
                             if (cameraBox.intersectsMesh(plane2a) && cameraBox.intersectsMesh(plane1a)) {
                                 camera.upperBetaLimit =  camera.beta;
                                 camera.lowerAlphaLimit =camera.alpha;
@@ -721,19 +705,17 @@
                                 camera.upperAlphaLimit = camera.alpha;
                                 console.log("3b")
                             } else if (cameraBox.intersectsMesh(plane3a)) {
-                                camera.upperBetaLimit =  camera.beta;
+                                camera.upperBetaLimit = camera.beta;
                                 camera.lowerAlphaLimit = camera.alpha;
                                 console.log("23")
                             } else if (cameraBox.intersectsMesh(plane2b)) {
                                 camera.lowerAlphaLimit = camera.alpha;
-                                camera.upperBetaLimit =  camera.beta;
+                                camera.upperBetaLimit = camera.beta;
                                 console.log("2b")
                             }
                         }
                     }
-
                 });
-
                 document.body.appendChild(framebottom);
             }
             function removeHTML(i) {
@@ -753,6 +735,7 @@
             }
             function navigateCube(destination){
                 cameraController.moveTo(destination);
+                initParseContent();
 
                 if(destination == "CONTACT"){
                     openTEXT( cmsdata["pages"]["CONTACT"][0]["text"] );
@@ -762,11 +745,9 @@
                 }            
             }
             function openCube(c, dataobj){
-
                 if(camera.activeAnimations == 0) {
                     cameraController.moveTo('PROJECT');
                     var crdnts = [9,9,4];
-                    //moveCenter( new BABYLON.Vector3(-9, 3, -5.5) );
 
                     if(c == "WORK"){
                         openContent(crdnts, dataobj, "WORK", "#2554d9");
@@ -792,13 +773,13 @@
                 if(contentBG){
                     contentBG.dispose();
                 }
-                if(categoryPlane){                                                                         
-                    categoryPlane.dispose();     
+                if(categoryPlane){
+                    categoryPlane.dispose();
                 }
                 if(subcategoryPlane){
                     subcategoryPlane.actionManager.unregisterAction( subcategoryPlane.actionManager.actions[0] );//werkt niet?
-                    subcategoryPlane.dispose(); 
-                }                                                                     
+                    subcategoryPlane.dispose();
+                }
                 var disposethis = scene.getMeshesByTags("deleteMe");
                 for (var index = 0; index < disposethis.length; index++) {
                     disposethis[index].dispose();
@@ -819,18 +800,14 @@
                 categoryPlane.position = new BABYLON.Vector3(-10, -0.02, -10); 
                 categoryPlane.rotation = new BABYLON.Vector3(-90 * (Math.PI / 180), -90 * (Math.PI / 180), 0);                  
                 categoryPlane.material = material;  
-                //categoryPlane.scaling = new BABYLON.Vector3(0.7,0.7,0.7);
 
                 BABYLON.Tags.AddTagsTo(categoryPlane, "deleteMe");                                
                 dynamicTex.drawText(tit, 1940, 120, "bold 85px Otto Attac Type", txtColor, "transparent", true);
                 dynamicTex.drawText(dataobj["title"], 1940, 160, "normal 30px Helvetica", txtColor, "transparent", true);    
 
-
-                                    
                 //COLUMNS//            
                 var grp = new BABYLON.TransformNode();
-
-                let contentLength = 0;          
+                let contentLength = 0;
 
                 for(let c = 0; c < dataobj["columns"].length; c++){
                     var columnwidth = dataobj["columns"][c]["width"];
@@ -867,10 +844,6 @@
                     BABYLON.Tags.AddTagsTo(columnTitlePlane, "deleteMe");
                     columnTitlePlane.parent = grp;        
                     dynamicTex3.drawText(dataobj["columns"][c]["name"], 10, 50, "normal 60px Helvetica", txtColor, "transparent", true);
-                    //dynamicTex3.scaling = new BABYLON.Vector3(5,5,5);
-                    
-                    //dynamicTex.drawText(dataobj["visuals"][c]["name"], 10, 50, "bold 40px Helvetica", txtColor, "transparent", true);   
-                    //impossible to rotate text within texture, so if we want it to be a whole, text orientation of column names should be vertical to
 
                     for(let i = 0; i < dataobj["columns"][c]["visual_media"].length; i++){
                         var imagewidth = dataobj["columns"][c]["visual_media"][i]["width"]/10;
@@ -909,12 +882,10 @@
                 shortTextPlane = BABYLON.MeshBuilder.CreatePlane("shortTextPlane", {width: 20, height: 20}, scene);        
                 shortTextPlane.isPickable = true;
                 shortTextPlane.position = new BABYLON.Vector3((contentLength * 2) + (offsetH/2), -11, -0.1);
-                // shortTextPlane.rotation = new BABYLON.Vector3(0, 180 * (Math.PI / 180), 0);                  
-                shortTextPlane.material = material4;  
+                shortTextPlane.material = material4;
                 shortTextPlane.parent = grp;                             
                 BABYLON.Tags.AddTagsTo(shortTextPlane, "deleteMe");  
 
-                
                 let paragraph = '';
                 let lineVerticalStart = 20;
                 dataobj["description"].match(/(\w+)/g).forEach((word, idx) => {                
@@ -926,8 +897,6 @@
                     }
                 })
                 dynamicTex4.drawText(paragraph, 0, lineVerticalStart, "normal 26px Helvetica", txtColor, "transparent", true);            
-
-                // dynamicTex4.drawText(dataobj["description"] + " (click to read more..)", 0, 20, "normal 26px Helvetica", txtColor, "transparent", true);
 
                 shortTextPlane.actionManager = new BABYLON.ActionManager(scene);
                 shortTextPlane.actionManager.registerAction(
@@ -942,8 +911,7 @@
             function openTEXT(txt){
                 var msg = document.createElement("div");
                 msg.setAttribute("id", "msg");
-                //msg.setAttribute("onclick", "removeHTML('msg')");
-                var addHTML = "<div id='curtain' onclick=\"removeHTML('msg')\"></div>";            
+                var addHTML = "<div id='curtain' onclick=\"removeHTML('msg')\"></div>";
                 addHTML += "<div id='msgwindow'>" + txt + "<div id=\"closeX\"><a href=\"javascript:removeHTML('msg')\"></a></div></div>";
                 msg.innerHTML = addHTML;
                 document.body.appendChild(msg);
@@ -992,9 +960,7 @@
                 camera.angularSensibilityX = camera.angularSensibilityY = 1000; // gevoelighiedh draaien
 
                 var rotationMode = false;
-
-                const plane =
-                    BABYLON.Plane.FromPositionAndNormal(BABYLON.Vector3.Zero(), BABYLON.Axis.Y);
+                const plane = BABYLON.Plane.FromPositionAndNormal(BABYLON.Vector3.Zero(), BABYLON.Axis.Y);
                 const inertialPanning = BABYLON.Vector3.Zero();  // doet iets met zoom snelheid scroll
 
                 const wheelPrecisionFn = () => {
@@ -1053,8 +1019,6 @@
                 var b = parseInt( str.substr(5,2), 16);            
                 var colorThree = new Array( (r / 255), (g / 255), (b / 255) );
                 return colorThree[c];            
-                //new BABYLON.Color3( hexToColor3("#019db6", 0), hexToColor3("#019db6", 1), hexToColor3("#019db6", 2) ); 
-                //include #
             }
         </script>
 
