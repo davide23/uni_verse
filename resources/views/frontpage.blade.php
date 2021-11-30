@@ -280,7 +280,7 @@
 
             }
             async function loadCMS() {
-                return loadJSON(domain + "/api/cubes/1/generate-json");
+                return loadJSON("/api/cubes/1/generate-json");
             }
             async function loadJSON(url) {
                 await fetch(url)
