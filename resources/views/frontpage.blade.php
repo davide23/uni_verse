@@ -23,6 +23,7 @@
     <body id="body">
         <canvas id="canvas" crossorigin='anonymous'></canvas>
         <script>
+            domain = window.location.host;
             loadCMS();
 
             setTimeout(function() { initGlobalVariables() }, 1000);
@@ -32,7 +33,6 @@
             function initGlobalVariables() {
                 // Need to be globally defined in order to be reset/cleared
                 $.ajaxSetup({cache: true});
-                domain = window.location.host;
                 folderArea = "";
                 descriptionText = "";
                 contentBG = null;
@@ -280,7 +280,7 @@
 
             }
             async function loadCMS() {
-                return loadJSON("http://localhost:8000/api/cubes/1/generate-json");
+                return loadJSON(domain + "/api/cubes/1/generate-json");
             }
             async function loadJSON(url) {
                 await fetch(url)
