@@ -9,6 +9,7 @@ use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Markdown;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Trix;
 
 class Page extends Resource
 {
@@ -47,6 +48,7 @@ class Page extends Resource
             ID::make(__('ID'), 'id')->sortable(),
 
             Text::make('Name'),
+            Trix::make('Popup text')->rules('required'),
 
             Images::make('Background Column', 'background_visual_object') // second parameter is the media collection name
                 ->conversionOnPreview('thumb') // conversion used to display the "original" image

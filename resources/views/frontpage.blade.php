@@ -280,7 +280,7 @@
 
             }
             async function loadCMS() {
-                return loadJSON("/api/cubes/2/generate-json");
+                return loadJSON("/api/cubes/1/generate-json");
             }
             async function loadJSON(url) {
                 await fetch(url)
@@ -738,10 +738,10 @@
                 initParseContent();
 
                 if(destination == "CONTACT"){
-                    openTEXT( cmsdata["pages"]["CONTACT"][0]["text"] );
+                    openTEXT(getPage("CONTACT")["popup_text"]);
                 }
                 else if(destination == "ABOUT"){                
-                    openTEXT( cmsdata["pages"]["ABOUT"][0]["text"] );
+                    openTEXT( cmsdata["pages"]["ABOUT"]["popup_text"] );
                 }            
             }
             function openCube(c, dataobj){
