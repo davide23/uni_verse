@@ -48,7 +48,7 @@ class Project extends Resource
             Text::make('Description'),
             Text::make('Text'),
 
-            HasMany::make('Visuals'),
+            HasMany::make('Columns'),
         ];
     }
 

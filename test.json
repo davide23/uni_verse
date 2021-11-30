@@ -1,0 +1,461 @@
+[
+  {
+    "title": "Cubazzo",
+    "pages": [
+      {
+        "name": "LEARN",
+        "background_visual": "http:\/\/localhost:8000\/storage\/3\/ICONA-Vulcano-Interior-4K-UHD-Wallpaper.jpg",
+        "projects": [
+          {
+            "title": "poprcoddio",
+            "description": "poprcoddio poprcoddio poprcoddio poprcoddio",
+            "text": "poprcoddiopoprcoddiopoprcoddiopoprcoddiopoprcoddio",
+            "visuals": [
+              {
+                "name": "visualdio",
+                "width": 10,
+                "visual_media": [
+                  {
+                    "path": "http:\/\/localhost:8000\/storage\/4\/photo_2021-09-24-16.16.18-(1).jpeg",
+                    "width": 200,
+                    "height": 100,
+                    "video": false,
+                    "enlargefirst": true,
+                    "link": ""
+                  },
+                  {
+                    "path": "http:\/\/localhost:8000\/storage\/5\/photo_2021-09-24-16.16.18.jpeg",
+                    "width": 200,
+                    "height": 100,
+                    "video": false,
+                    "enlargefirst": true,
+                    "link": ""
+                  }
+                ],
+                "media": [
+                  {
+                    "id": 4,
+                    "model_type": "App\\Models\\Visual",
+                    "model_id": 1,
+                    "uuid": "c9878016-b6f6-4a39-8553-c75dba592681",
+                    "collection_name": "visual_media_objects",
+                    "name": "photo_2021-09-24-16.16.18 (1)",
+                    "file_name": "photo_2021-09-24-16.16.18-(1).jpeg",
+                    "mime_type": "image\/jpeg",
+                    "disk": "public",
+                    "conversions_disk": "public",
+                    "size": 107119,
+                    "manipulations": [],
+                    "custom_properties": [],
+                    "generated_conversions": {
+                      "thumb": true
+                    },
+                    "responsive_images": {
+                      "media_library_original": {
+                        "urls": [
+                          "photo_2021-09-24-16.16.18-(1)___media_library_original_1280_720.jpeg",
+                          "photo_2021-09-24-16.16.18-(1)___media_library_original_1070_601.jpeg",
+                          "photo_2021-09-24-16.16.18-(1)___media_library_original_895_503.jpeg",
+                          "photo_2021-09-24-16.16.18-(1)___media_library_original_749_421.jpeg",
+                          "photo_2021-09-24-16.16.18-(1)___media_library_original_627_352.jpeg",
+                          "photo_2021-09-24-16.16.18-(1)___media_library_original_524_294.jpeg",
+                          "photo_2021-09-24-16.16.18-(1)___media_library_original_439_246.jpeg"
+                        ],
+                        "base64svg": "data:image\/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiB5PSIwIiB2aWV3Qm94PSIwIDAgMTI4MCA3MjAiPgoJPGltYWdlIHdpZHRoPSIxMjgwIiBoZWlnaHQ9IjcyMCIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9qcGVnO2Jhc2U2NCwvOWovNEFBUVNrWkpSZ0FCQVFFQVlBQmdBQUQvL2dBN1ExSkZRVlJQVWpvZ1oyUXRhbkJsWnlCMk1TNHdJQ2gxYzJsdVp5QkpTa2NnU2xCRlJ5QjJPVEFwTENCeGRXRnNhWFI1SUQwZ09UQUsvOXNBUXdBREFnSURBZ0lEQXdNREJBTURCQVVJQlFVRUJBVUtCd2NHQ0F3S0RBd0xDZ3NMRFE0U0VBME9FUTRMQ3hBV0VCRVRGQlVWRlF3UEZ4Z1dGQmdTRkJVVS85c0FRd0VEQkFRRkJBVUpCUVVKRkEwTERSUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVLzhBQUVRZ0FFZ0FnQXdFUkFBSVJBUU1SQWYvRUFCOEFBQUVGQVFFQkFRRUJBQUFBQUFBQUFBQUJBZ01FQlFZSENBa0tDLy9FQUxVUUFBSUJBd01DQkFNRkJRUUVBQUFCZlFFQ0F3QUVFUVVTSVRGQkJoTlJZUWNpY1JReWdaR2hDQ05Dc2NFVlV0SHdKRE5pY29JSkNoWVhHQmthSlNZbktDa3FORFUyTnpnNU9rTkVSVVpIU0VsS1UxUlZWbGRZV1ZwalpHVm1aMmhwYW5OMGRYWjNlSGw2ZzRTRmhvZUlpWXFTazVTVmxwZVltWnFpbzZTbHBxZW9xYXF5czdTMXRyZTR1YnJDdzhURnhzZkl5Y3JTMDlUVjF0ZlkyZHJoNHVQazVlYm42T25xOGZMejlQWDI5L2o1K3YvRUFCOEJBQU1CQVFFQkFRRUJBUUVBQUFBQUFBQUJBZ01FQlFZSENBa0tDLy9FQUxVUkFBSUJBZ1FFQXdRSEJRUUVBQUVDZHdBQkFnTVJCQVVoTVFZU1FWRUhZWEVUSWpLQkNCUkNrYUd4d1Frak0xTHdGV0p5MFFvV0pEVGhKZkVYR0JrYUppY29LU28xTmpjNE9UcERSRVZHUjBoSlNsTlVWVlpYV0ZsYVkyUmxabWRvYVdwemRIVjJkM2g1ZW9LRGhJV0doNGlKaXBLVGxKV1dsNWlabXFLanBLV21wNmlwcXJLenRMVzJ0N2k1dXNMRHhNWEd4OGpKeXRMVDFOWFcxOWpaMnVMajVPWG01K2pwNnZMejlQWDI5L2o1K3YvYUFBd0RBUUFDRVFNUkFEOEE4dStDL3dBR2s4WjZlazdLRGxzYzF6WUNOQ1NmdFR2eERxSis0ZlJ0bCt5MW9EVzhjYzhaRXVPYVU2Tk56ZkxzWENic3VZNXY0cGZzd2FINGY4SVhtb1FIRWthRWlrNktTMENjdGRENG9rbGp0cnlXSUhoV0lyS0NzYzFUVSt0djJaZkdlaDZEb3lSNmpkcmJ1clp3eHhYQlRkajBXbEkraWRWK08zZzYyRVpHb3haQTY3cTlTbE5Nd21ySG5meGQrT25obld2QTkvYTIrb1J2SzZFQlExZERrckdOejg2TlR2UWRRdUhVL0tYSkJybXQySWI3blZYczBrVEpzZGsvM1RpdUZHOFdaMnQzYzVqWDk5SjAvdkd0YVE1R0dMbVpsSU1ya2VoWTEwdll4NmxDNzZVNlpsVVAvOWs9Ij4KCTwvaW1hZ2U+Cjwvc3ZnPg=="
+                      }
+                    },
+                    "order_column": 1,
+                    "created_at": "2021-11-22T14:43:35.000000Z",
+                    "updated_at": "2021-11-22T14:43:36.000000Z",
+                    "original_url": "http:\/\/localhost:8000\/storage\/4\/photo_2021-09-24-16.16.18-(1).jpeg",
+                    "preview_url": ""
+                  },
+                  {
+                    "id": 5,
+                    "model_type": "App\\Models\\Visual",
+                    "model_id": 1,
+                    "uuid": "f4dcd912-97dd-43e3-8928-1435381baf7d",
+                    "collection_name": "visual_media_objects",
+                    "name": "photo_2021-09-24-16.16.18",
+                    "file_name": "photo_2021-09-24-16.16.18.jpeg",
+                    "mime_type": "image\/jpeg",
+                    "disk": "public",
+                    "conversions_disk": "public",
+                    "size": 107119,
+                    "manipulations": [],
+                    "custom_properties": [],
+                    "generated_conversions": {
+                      "thumb": true
+                    },
+                    "responsive_images": {
+                      "media_library_original": {
+                        "urls": [
+                          "photo_2021-09-24-16.16.18___media_library_original_1280_720.jpeg",
+                          "photo_2021-09-24-16.16.18___media_library_original_1070_601.jpeg",
+                          "photo_2021-09-24-16.16.18___media_library_original_895_503.jpeg",
+                          "photo_2021-09-24-16.16.18___media_library_original_749_421.jpeg",
+                          "photo_2021-09-24-16.16.18___media_library_original_627_352.jpeg",
+                          "photo_2021-09-24-16.16.18___media_library_original_524_294.jpeg",
+                          "photo_2021-09-24-16.16.18___media_library_original_439_246.jpeg"
+                        ],
+                        "base64svg": "data:image\/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiB5PSIwIiB2aWV3Qm94PSIwIDAgMTI4MCA3MjAiPgoJPGltYWdlIHdpZHRoPSIxMjgwIiBoZWlnaHQ9IjcyMCIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9qcGVnO2Jhc2U2NCwvOWovNEFBUVNrWkpSZ0FCQVFFQVlBQmdBQUQvL2dBN1ExSkZRVlJQVWpvZ1oyUXRhbkJsWnlCMk1TNHdJQ2gxYzJsdVp5QkpTa2NnU2xCRlJ5QjJPVEFwTENCeGRXRnNhWFI1SUQwZ09UQUsvOXNBUXdBREFnSURBZ0lEQXdNREJBTURCQVVJQlFVRUJBVUtCd2NHQ0F3S0RBd0xDZ3NMRFE0U0VBME9FUTRMQ3hBV0VCRVRGQlVWRlF3UEZ4Z1dGQmdTRkJVVS85c0FRd0VEQkFRRkJBVUpCUVVKRkEwTERSUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVLzhBQUVRZ0FFZ0FnQXdFUkFBSVJBUU1SQWYvRUFCOEFBQUVGQVFFQkFRRUJBQUFBQUFBQUFBQUJBZ01FQlFZSENBa0tDLy9FQUxVUUFBSUJBd01DQkFNRkJRUUVBQUFCZlFFQ0F3QUVFUVVTSVRGQkJoTlJZUWNpY1JReWdaR2hDQ05Dc2NFVlV0SHdKRE5pY29JSkNoWVhHQmthSlNZbktDa3FORFUyTnpnNU9rTkVSVVpIU0VsS1UxUlZWbGRZV1ZwalpHVm1aMmhwYW5OMGRYWjNlSGw2ZzRTRmhvZUlpWXFTazVTVmxwZVltWnFpbzZTbHBxZW9xYXF5czdTMXRyZTR1YnJDdzhURnhzZkl5Y3JTMDlUVjF0ZlkyZHJoNHVQazVlYm42T25xOGZMejlQWDI5L2o1K3YvRUFCOEJBQU1CQVFFQkFRRUJBUUVBQUFBQUFBQUJBZ01FQlFZSENBa0tDLy9FQUxVUkFBSUJBZ1FFQXdRSEJRUUVBQUVDZHdBQkFnTVJCQVVoTVFZU1FWRUhZWEVUSWpLQkNCUkNrYUd4d1Frak0xTHdGV0p5MFFvV0pEVGhKZkVYR0JrYUppY29LU28xTmpjNE9UcERSRVZHUjBoSlNsTlVWVlpYV0ZsYVkyUmxabWRvYVdwemRIVjJkM2g1ZW9LRGhJV0doNGlKaXBLVGxKV1dsNWlabXFLanBLV21wNmlwcXJLenRMVzJ0N2k1dXNMRHhNWEd4OGpKeXRMVDFOWFcxOWpaMnVMajVPWG01K2pwNnZMejlQWDI5L2o1K3YvYUFBd0RBUUFDRVFNUkFEOEE4dStDL3dBR2s4WjZlazdLRGxzYzF6WUNOQ1NmdFR2eERxSis0ZlJ0bCt5MW9EVzhjYzhaRXVPYVU2Tk56ZkxzWENic3VZNXY0cGZzd2FINGY4SVhtb1FIRWthRWlrNktTMENjdGRENG9rbGp0cnlXSUhoV0lyS0NzYzFUVSt0djJaZkdlaDZEb3lSNmpkcmJ1clp3eHhYQlRkajBXbEkraWRWK08zZzYyRVpHb3haQTY3cTlTbE5Nd21ySG5meGQrT25obld2QTkvYTIrb1J2SzZFQlExZERrckdOejg2TlR2UWRRdUhVL0tYSkJybXQySWI3blZYczBrVEpzZGsvM1RpdUZHOFdaMnQzYzVqWDk5SjAvdkd0YVE1R0dMbVpsSU1ya2VoWTEwdll4NmxDNzZVNlpsVVAvOWs9Ij4KCTwvaW1hZ2U+Cjwvc3ZnPg=="
+                      }
+                    },
+                    "order_column": 2,
+                    "created_at": "2021-11-22T14:43:36.000000Z",
+                    "updated_at": "2021-11-22T14:43:36.000000Z",
+                    "original_url": "http:\/\/localhost:8000\/storage\/5\/photo_2021-09-24-16.16.18.jpeg",
+                    "preview_url": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "media": [
+          {
+            "id": 1,
+            "model_type": "App\\Models\\Page",
+            "model_id": 8,
+            "uuid": "130e73a2-217d-4caf-b603-429da1dee4b5",
+            "collection_name": "background_visual",
+            "name": "ICONA-Vulcano-Interior-4K-UHD-Wallpaper",
+            "file_name": "ICONA-Vulcano-Interior-4K-UHD-Wallpaper.jpg",
+            "mime_type": "image\/jpeg",
+            "disk": "public",
+            "conversions_disk": "public",
+            "size": 12781678,
+            "manipulations": [],
+            "custom_properties": [],
+            "generated_conversions": {
+              "thumb": true
+            },
+            "responsive_images": {
+              "media_library_original": {
+                "urls": [
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_7000_3938.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_5856_3294.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_4900_2756.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_4099_2305.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_3429_1929.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_2869_1614.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_2400_1350.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_2008_1129.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_1680_945.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_1406_790.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_1176_661.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_984_553.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_823_462.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_689_387.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_576_324.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_482_271.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_403_226.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_337_189.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_282_158.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_236_132.jpg"
+                ],
+                "base64svg": "data:image\/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiB5PSIwIiB2aWV3Qm94PSIwIDAgNzAwMCAzOTM4Ij4KCTxpbWFnZSB3aWR0aD0iNzAwMCIgaGVpZ2h0PSIzOTM4IiB4bGluazpocmVmPSJkYXRhOmltYWdlL2pwZWc7YmFzZTY0LC85ai80QUFRU2taSlJnQUJBUUVBWUFCZ0FBRC8vZ0E3UTFKRlFWUlBVam9nWjJRdGFuQmxaeUIyTVM0d0lDaDFjMmx1WnlCSlNrY2dTbEJGUnlCMk9UQXBMQ0J4ZFdGc2FYUjVJRDBnT1RBSy85c0FRd0FEQWdJREFnSURBd01EQkFNREJBVUlCUVVFQkFVS0J3Y0dDQXdLREF3TENnc0xEUTRTRUEwT0VRNExDeEFXRUJFVEZCVVZGUXdQRnhnV0ZCZ1NGQlVVLzlzQVF3RURCQVFGQkFVSkJRVUpGQTBMRFJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVUvOEFBRVFnQUVnQWdBd0VSQUFJUkFRTVJBZi9FQUI4QUFBRUZBUUVCQVFFQkFBQUFBQUFBQUFBQkFnTUVCUVlIQ0FrS0MvL0VBTFVRQUFJQkF3TUNCQU1GQlFRRUFBQUJmUUVDQXdBRUVRVVNJVEZCQmhOUllRY2ljUlF5Z1pHaENDTkNzY0VWVXRId0pETmljb0lKQ2hZWEdCa2FKU1luS0NrcU5EVTJOemc1T2tORVJVWkhTRWxLVTFSVlZsZFlXVnBqWkdWbVoyaHBhbk4wZFhaM2VIbDZnNFNGaG9lSWlZcVNrNVNWbHBlWW1acWlvNlNscHFlb3FhcXlzN1MxdHJlNHVickN3OFRGeHNmSXljclMwOVRWMXRmWTJkcmg0dVBrNWVibjZPbnE4Zkx6OVBYMjkvajUrdi9FQUI4QkFBTUJBUUVCQVFFQkFRRUFBQUFBQUFBQkFnTUVCUVlIQ0FrS0MvL0VBTFVSQUFJQkFnUUVBd1FIQlFRRUFBRUNkd0FCQWdNUkJBVWhNUVlTUVZFSFlYRVRJaktCQ0JSQ2thR3h3UWtqTTFMd0ZXSnkwUW9XSkRUaEpmRVhHQmthSmljb0tTbzFOamM0T1RwRFJFVkdSMGhKU2xOVVZWWlhXRmxhWTJSbFptZG9hV3B6ZEhWMmQzaDVlb0tEaElXR2g0aUppcEtUbEpXV2w1aVptcUtqcEtXbXA2aXBxckt6dExXMnQ3aTV1c0xEeE1YR3g4akp5dExUMU5YVzE5aloydUxqNU9YbTUranA2dkx6OVBYMjkvajUrdi9hQUF3REFRQUNFUU1SQUQ4QStRSi9qNXFYaXk1RnZjeStYYmpnZzF5eHA4cVBvS3VOVmVwYlpHMXA5L285MUV4U0paSHhrbXRWSnBhbkRWcHdjN1Jad1BqbTkwNmVjUXh4Yld6MnBSbGN5clVIVFp6QjhPQWdTeERHYWJhZWhFRk9tN293dFowcTZzcDkwUUs1OUt1NnRjaVZLVVpjcHIrRTc3VnJVdEdrYnliK0s1NXpqYmM2NmRLcHpMUTZ5MjBXSno1dXBnb1R6azlxNEhYYmRvSHUvVkxwT3FaMnU2M2E2Ym1LMGszcUs2cU1aUzFrZVZpcHdwKzdUSnRUVUdHUElCcm9md0Uxdjk0T3QrSHNTTmNqS0tmcUs4R3UyZlY0WkxUUVQ0cEFKYlNiUUYrbkZSaFBpTk16MHA2SGlMa2wyeVNhK2tXeCtmUzNQLy9aIj4KCTwvaW1hZ2U+Cjwvc3ZnPg=="
+              }
+            },
+            "order_column": 1,
+            "created_at": "2021-11-22T14:41:09.000000Z",
+            "updated_at": "2021-11-22T14:41:32.000000Z",
+            "original_url": "http:\/\/localhost:8000\/storage\/1\/ICONA-Vulcano-Interior-4K-UHD-Wallpaper.jpg",
+            "preview_url": ""
+          },
+          {
+            "id": 3,
+            "model_type": "App\\Models\\Page",
+            "model_id": 8,
+            "uuid": "b54b5b3e-6099-402d-90c2-6f8a4c06fc49",
+            "collection_name": "background_visual_object",
+            "name": "ICONA-Vulcano-Interior-4K-UHD-Wallpaper",
+            "file_name": "ICONA-Vulcano-Interior-4K-UHD-Wallpaper.jpg",
+            "mime_type": "image\/jpeg",
+            "disk": "public",
+            "conversions_disk": "public",
+            "size": 12781678,
+            "manipulations": [],
+            "custom_properties": [],
+            "generated_conversions": {
+              "thumb": true
+            },
+            "responsive_images": {
+              "media_library_original": {
+                "urls": [
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_7000_3938.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_5856_3294.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_4900_2756.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_4099_2305.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_3429_1929.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_2869_1614.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_2400_1350.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_2008_1129.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_1680_945.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_1406_790.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_1176_661.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_984_553.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_823_462.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_689_387.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_576_324.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_482_271.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_403_226.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_337_189.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_282_158.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_236_132.jpg"
+                ],
+                "base64svg": "data:image\/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiB5PSIwIiB2aWV3Qm94PSIwIDAgNzAwMCAzOTM4Ij4KCTxpbWFnZSB3aWR0aD0iNzAwMCIgaGVpZ2h0PSIzOTM4IiB4bGluazpocmVmPSJkYXRhOmltYWdlL2pwZWc7YmFzZTY0LC85ai80QUFRU2taSlJnQUJBUUVBWUFCZ0FBRC8vZ0E3UTFKRlFWUlBVam9nWjJRdGFuQmxaeUIyTVM0d0lDaDFjMmx1WnlCSlNrY2dTbEJGUnlCMk9UQXBMQ0J4ZFdGc2FYUjVJRDBnT1RBSy85c0FRd0FEQWdJREFnSURBd01EQkFNREJBVUlCUVVFQkFVS0J3Y0dDQXdLREF3TENnc0xEUTRTRUEwT0VRNExDeEFXRUJFVEZCVVZGUXdQRnhnV0ZCZ1NGQlVVLzlzQVF3RURCQVFGQkFVSkJRVUpGQTBMRFJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVUvOEFBRVFnQUVnQWdBd0VSQUFJUkFRTVJBZi9FQUI4QUFBRUZBUUVCQVFFQkFBQUFBQUFBQUFBQkFnTUVCUVlIQ0FrS0MvL0VBTFVRQUFJQkF3TUNCQU1GQlFRRUFBQUJmUUVDQXdBRUVRVVNJVEZCQmhOUllRY2ljUlF5Z1pHaENDTkNzY0VWVXRId0pETmljb0lKQ2hZWEdCa2FKU1luS0NrcU5EVTJOemc1T2tORVJVWkhTRWxLVTFSVlZsZFlXVnBqWkdWbVoyaHBhbk4wZFhaM2VIbDZnNFNGaG9lSWlZcVNrNVNWbHBlWW1acWlvNlNscHFlb3FhcXlzN1MxdHJlNHVickN3OFRGeHNmSXljclMwOVRWMXRmWTJkcmg0dVBrNWVibjZPbnE4Zkx6OVBYMjkvajUrdi9FQUI4QkFBTUJBUUVCQVFFQkFRRUFBQUFBQUFBQkFnTUVCUVlIQ0FrS0MvL0VBTFVSQUFJQkFnUUVBd1FIQlFRRUFBRUNkd0FCQWdNUkJBVWhNUVlTUVZFSFlYRVRJaktCQ0JSQ2thR3h3UWtqTTFMd0ZXSnkwUW9XSkRUaEpmRVhHQmthSmljb0tTbzFOamM0T1RwRFJFVkdSMGhKU2xOVVZWWlhXRmxhWTJSbFptZG9hV3B6ZEhWMmQzaDVlb0tEaElXR2g0aUppcEtUbEpXV2w1aVptcUtqcEtXbXA2aXBxckt6dExXMnQ3aTV1c0xEeE1YR3g4akp5dExUMU5YVzE5aloydUxqNU9YbTUranA2dkx6OVBYMjkvajUrdi9hQUF3REFRQUNFUU1SQUQ4QStRSi9qNXFYaXk1RnZjeStYYmpnZzF5eHA4cVBvS3VOVmVwYlpHMXA5L285MUV4U0paSHhrbXRWSnBhbkRWcHdjN1Jad1BqbTkwNmVjUXh4Yld6MnBSbGN5clVIVFp6QjhPQWdTeERHYWJhZWhFRk9tN293dFowcTZzcDkwUUs1OUt1NnRjaVZLVVpjcHIrRTc3VnJVdEdrYnliK0s1NXpqYmM2NmRLcHpMUTZ5MjBXSno1dXBnb1R6azlxNEhYYmRvSHUvVkxwT3FaMnU2M2E2Ym1LMGszcUs2cU1aUzFrZVZpcHdwKzdUSnRUVUdHUElCcm9md0Uxdjk0T3QrSHNTTmNqS0tmcUs4R3UyZlY0WkxUUVQ0cEFKYlNiUUYrbkZSaFBpTk16MHA2SGlMa2wyeVNhK2tXeCtmUzNQLy9aIj4KCTwvaW1hZ2U+Cjwvc3ZnPg=="
+              }
+            },
+            "order_column": 1,
+            "created_at": "2021-11-22T14:42:38.000000Z",
+            "updated_at": "2021-11-22T14:43:00.000000Z",
+            "original_url": "http:\/\/localhost:8000\/storage\/3\/ICONA-Vulcano-Interior-4K-UHD-Wallpaper.jpg",
+            "preview_url": ""
+          }
+        ]
+      },
+      {
+        "name": "PLAY",
+        "background_visual": "http:\/\/localhost:8000\/storage\/6\/ICONA-Vulcano-Interior-4K-UHD-Wallpaper.jpg",
+        "projects": [
+          {
+            "title": "asd",
+            "description": "asd",
+            "text": "askdjh",
+            "visuals": [
+              {
+                "name": "doca",
+                "width": 10,
+                "visual_media": [
+                  {
+                    "path": "http:\/\/localhost:8000\/storage\/9\/photo_2021-09-24-16.16.18.jpeg",
+                    "width": 200,
+                    "height": 100,
+                    "video": false,
+                    "enlargefirst": true,
+                    "link": ""
+                  }
+                ],
+                "media": [
+                  {
+                    "id": 9,
+                    "model_type": "App\\Models\\Visual",
+                    "model_id": 3,
+                    "uuid": "34cd7b8b-4e76-4f16-98b3-ef8da88b5c37",
+                    "collection_name": "visual_media_objects",
+                    "name": "photo_2021-09-24-16.16.18",
+                    "file_name": "photo_2021-09-24-16.16.18.jpeg",
+                    "mime_type": "image\/jpeg",
+                    "disk": "public",
+                    "conversions_disk": "public",
+                    "size": 107119,
+                    "manipulations": [],
+                    "custom_properties": [],
+                    "generated_conversions": {
+                      "thumb": true
+                    },
+                    "responsive_images": {
+                      "media_library_original": {
+                        "urls": [
+                          "photo_2021-09-24-16.16.18___media_library_original_1280_720.jpeg",
+                          "photo_2021-09-24-16.16.18___media_library_original_1070_601.jpeg",
+                          "photo_2021-09-24-16.16.18___media_library_original_895_503.jpeg",
+                          "photo_2021-09-24-16.16.18___media_library_original_749_421.jpeg",
+                          "photo_2021-09-24-16.16.18___media_library_original_627_352.jpeg",
+                          "photo_2021-09-24-16.16.18___media_library_original_524_294.jpeg",
+                          "photo_2021-09-24-16.16.18___media_library_original_439_246.jpeg"
+                        ],
+                        "base64svg": "data:image\/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiB5PSIwIiB2aWV3Qm94PSIwIDAgMTI4MCA3MjAiPgoJPGltYWdlIHdpZHRoPSIxMjgwIiBoZWlnaHQ9IjcyMCIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9qcGVnO2Jhc2U2NCwvOWovNEFBUVNrWkpSZ0FCQVFFQVlBQmdBQUQvL2dBN1ExSkZRVlJQVWpvZ1oyUXRhbkJsWnlCMk1TNHdJQ2gxYzJsdVp5QkpTa2NnU2xCRlJ5QjJPVEFwTENCeGRXRnNhWFI1SUQwZ09UQUsvOXNBUXdBREFnSURBZ0lEQXdNREJBTURCQVVJQlFVRUJBVUtCd2NHQ0F3S0RBd0xDZ3NMRFE0U0VBME9FUTRMQ3hBV0VCRVRGQlVWRlF3UEZ4Z1dGQmdTRkJVVS85c0FRd0VEQkFRRkJBVUpCUVVKRkEwTERSUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVLzhBQUVRZ0FFZ0FnQXdFUkFBSVJBUU1SQWYvRUFCOEFBQUVGQVFFQkFRRUJBQUFBQUFBQUFBQUJBZ01FQlFZSENBa0tDLy9FQUxVUUFBSUJBd01DQkFNRkJRUUVBQUFCZlFFQ0F3QUVFUVVTSVRGQkJoTlJZUWNpY1JReWdaR2hDQ05Dc2NFVlV0SHdKRE5pY29JSkNoWVhHQmthSlNZbktDa3FORFUyTnpnNU9rTkVSVVpIU0VsS1UxUlZWbGRZV1ZwalpHVm1aMmhwYW5OMGRYWjNlSGw2ZzRTRmhvZUlpWXFTazVTVmxwZVltWnFpbzZTbHBxZW9xYXF5czdTMXRyZTR1YnJDdzhURnhzZkl5Y3JTMDlUVjF0ZlkyZHJoNHVQazVlYm42T25xOGZMejlQWDI5L2o1K3YvRUFCOEJBQU1CQVFFQkFRRUJBUUVBQUFBQUFBQUJBZ01FQlFZSENBa0tDLy9FQUxVUkFBSUJBZ1FFQXdRSEJRUUVBQUVDZHdBQkFnTVJCQVVoTVFZU1FWRUhZWEVUSWpLQkNCUkNrYUd4d1Frak0xTHdGV0p5MFFvV0pEVGhKZkVYR0JrYUppY29LU28xTmpjNE9UcERSRVZHUjBoSlNsTlVWVlpYV0ZsYVkyUmxabWRvYVdwemRIVjJkM2g1ZW9LRGhJV0doNGlKaXBLVGxKV1dsNWlabXFLanBLV21wNmlwcXJLenRMVzJ0N2k1dXNMRHhNWEd4OGpKeXRMVDFOWFcxOWpaMnVMajVPWG01K2pwNnZMejlQWDI5L2o1K3YvYUFBd0RBUUFDRVFNUkFEOEE4dStDL3dBR2s4WjZlazdLRGxzYzF6WUNOQ1NmdFR2eERxSis0ZlJ0bCt5MW9EVzhjYzhaRXVPYVU2Tk56ZkxzWENic3VZNXY0cGZzd2FINGY4SVhtb1FIRWthRWlrNktTMENjdGRENG9rbGp0cnlXSUhoV0lyS0NzYzFUVSt0djJaZkdlaDZEb3lSNmpkcmJ1clp3eHhYQlRkajBXbEkraWRWK08zZzYyRVpHb3haQTY3cTlTbE5Nd21ySG5meGQrT25obld2QTkvYTIrb1J2SzZFQlExZERrckdOejg2TlR2UWRRdUhVL0tYSkJybXQySWI3blZYczBrVEpzZGsvM1RpdUZHOFdaMnQzYzVqWDk5SjAvdkd0YVE1R0dMbVpsSU1ya2VoWTEwdll4NmxDNzZVNlpsVVAvOWs9Ij4KCTwvaW1hZ2U+Cjwvc3ZnPg=="
+                      }
+                    },
+                    "order_column": 1,
+                    "created_at": "2021-11-22T15:01:16.000000Z",
+                    "updated_at": "2021-11-22T15:01:17.000000Z",
+                    "original_url": "http:\/\/localhost:8000\/storage\/9\/photo_2021-09-24-16.16.18.jpeg",
+                    "preview_url": ""
+                  }
+                ]
+              },
+              {
+                "name": "ione",
+                "width": 10,
+                "visual_media": [
+                  {
+                    "path": "http:\/\/localhost:8000\/storage\/10\/ICONA-Vulcano-Interior-4K-UHD-Wallpaper.jpg",
+                    "width": 200,
+                    "height": 100,
+                    "video": false,
+                    "enlargefirst": true,
+                    "link": ""
+                  }
+                ],
+                "media": [
+                  {
+                    "id": 10,
+                    "model_type": "App\\Models\\Visual",
+                    "model_id": 4,
+                    "uuid": "f75247f6-2e50-4591-9edd-bd96c21c5828",
+                    "collection_name": "visual_media_objects",
+                    "name": "ICONA-Vulcano-Interior-4K-UHD-Wallpaper",
+                    "file_name": "ICONA-Vulcano-Interior-4K-UHD-Wallpaper.jpg",
+                    "mime_type": "image\/jpeg",
+                    "disk": "public",
+                    "conversions_disk": "public",
+                    "size": 12781678,
+                    "manipulations": [],
+                    "custom_properties": [],
+                    "generated_conversions": {
+                      "thumb": true
+                    },
+                    "responsive_images": {
+                      "media_library_original": {
+                        "urls": [
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_7000_3938.jpg",
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_5856_3294.jpg",
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_4900_2756.jpg",
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_4099_2305.jpg",
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_3429_1929.jpg",
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_2869_1614.jpg",
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_2400_1350.jpg",
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_2008_1129.jpg",
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_1680_945.jpg",
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_1406_790.jpg",
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_1176_661.jpg",
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_984_553.jpg",
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_823_462.jpg",
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_689_387.jpg",
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_576_324.jpg",
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_482_271.jpg",
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_403_226.jpg",
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_337_189.jpg",
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_282_158.jpg",
+                          "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_236_132.jpg"
+                        ],
+                        "base64svg": "data:image\/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiB5PSIwIiB2aWV3Qm94PSIwIDAgNzAwMCAzOTM4Ij4KCTxpbWFnZSB3aWR0aD0iNzAwMCIgaGVpZ2h0PSIzOTM4IiB4bGluazpocmVmPSJkYXRhOmltYWdlL2pwZWc7YmFzZTY0LC85ai80QUFRU2taSlJnQUJBUUVBWUFCZ0FBRC8vZ0E3UTFKRlFWUlBVam9nWjJRdGFuQmxaeUIyTVM0d0lDaDFjMmx1WnlCSlNrY2dTbEJGUnlCMk9UQXBMQ0J4ZFdGc2FYUjVJRDBnT1RBSy85c0FRd0FEQWdJREFnSURBd01EQkFNREJBVUlCUVVFQkFVS0J3Y0dDQXdLREF3TENnc0xEUTRTRUEwT0VRNExDeEFXRUJFVEZCVVZGUXdQRnhnV0ZCZ1NGQlVVLzlzQVF3RURCQVFGQkFVSkJRVUpGQTBMRFJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVUvOEFBRVFnQUVnQWdBd0VSQUFJUkFRTVJBZi9FQUI4QUFBRUZBUUVCQVFFQkFBQUFBQUFBQUFBQkFnTUVCUVlIQ0FrS0MvL0VBTFVRQUFJQkF3TUNCQU1GQlFRRUFBQUJmUUVDQXdBRUVRVVNJVEZCQmhOUllRY2ljUlF5Z1pHaENDTkNzY0VWVXRId0pETmljb0lKQ2hZWEdCa2FKU1luS0NrcU5EVTJOemc1T2tORVJVWkhTRWxLVTFSVlZsZFlXVnBqWkdWbVoyaHBhbk4wZFhaM2VIbDZnNFNGaG9lSWlZcVNrNVNWbHBlWW1acWlvNlNscHFlb3FhcXlzN1MxdHJlNHVickN3OFRGeHNmSXljclMwOVRWMXRmWTJkcmg0dVBrNWVibjZPbnE4Zkx6OVBYMjkvajUrdi9FQUI4QkFBTUJBUUVCQVFFQkFRRUFBQUFBQUFBQkFnTUVCUVlIQ0FrS0MvL0VBTFVSQUFJQkFnUUVBd1FIQlFRRUFBRUNkd0FCQWdNUkJBVWhNUVlTUVZFSFlYRVRJaktCQ0JSQ2thR3h3UWtqTTFMd0ZXSnkwUW9XSkRUaEpmRVhHQmthSmljb0tTbzFOamM0T1RwRFJFVkdSMGhKU2xOVVZWWlhXRmxhWTJSbFptZG9hV3B6ZEhWMmQzaDVlb0tEaElXR2g0aUppcEtUbEpXV2w1aVptcUtqcEtXbXA2aXBxckt6dExXMnQ3aTV1c0xEeE1YR3g4akp5dExUMU5YVzE5aloydUxqNU9YbTUranA2dkx6OVBYMjkvajUrdi9hQUF3REFRQUNFUU1SQUQ4QStRSi9qNXFYaXk1RnZjeStYYmpnZzF5eHA4cVBvS3VOVmVwYlpHMXA5L285MUV4U0paSHhrbXRWSnBhbkRWcHdjN1Jad1BqbTkwNmVjUXh4Yld6MnBSbGN5clVIVFp6QjhPQWdTeERHYWJhZWhFRk9tN293dFowcTZzcDkwUUs1OUt1NnRjaVZLVVpjcHIrRTc3VnJVdEdrYnliK0s1NXpqYmM2NmRLcHpMUTZ5MjBXSno1dXBnb1R6azlxNEhYYmRvSHUvVkxwT3FaMnU2M2E2Ym1LMGszcUs2cU1aUzFrZVZpcHdwKzdUSnRUVUdHUElCcm9md0Uxdjk0T3QrSHNTTmNqS0tmcUs4R3UyZlY0WkxUUVQ0cEFKYlNiUUYrbkZSaFBpTk16MHA2SGlMa2wyeVNhK2tXeCtmUzNQLy9aIj4KCTwvaW1hZ2U+Cjwvc3ZnPg=="
+                      }
+                    },
+                    "order_column": 1,
+                    "created_at": "2021-11-22T15:03:00.000000Z",
+                    "updated_at": "2021-11-22T15:03:23.000000Z",
+                    "original_url": "http:\/\/localhost:8000\/storage\/10\/ICONA-Vulcano-Interior-4K-UHD-Wallpaper.jpg",
+                    "preview_url": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "media": [
+          {
+            "id": 6,
+            "model_type": "App\\Models\\Page",
+            "model_id": 15,
+            "uuid": "6a0f197a-eacf-4384-981c-5046113ee691",
+            "collection_name": "background_visual_object",
+            "name": "ICONA-Vulcano-Interior-4K-UHD-Wallpaper",
+            "file_name": "ICONA-Vulcano-Interior-4K-UHD-Wallpaper.jpg",
+            "mime_type": "image\/jpeg",
+            "disk": "public",
+            "conversions_disk": "public",
+            "size": 12781678,
+            "manipulations": [],
+            "custom_properties": [],
+            "generated_conversions": {
+              "thumb": true
+            },
+            "responsive_images": {
+              "media_library_original": {
+                "urls": [
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_7000_3938.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_5856_3294.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_4900_2756.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_4099_2305.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_3429_1929.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_2869_1614.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_2400_1350.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_2008_1129.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_1680_945.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_1406_790.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_1176_661.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_984_553.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_823_462.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_689_387.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_576_324.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_482_271.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_403_226.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_337_189.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_282_158.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_236_132.jpg"
+                ],
+                "base64svg": "data:image\/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiB5PSIwIiB2aWV3Qm94PSIwIDAgNzAwMCAzOTM4Ij4KCTxpbWFnZSB3aWR0aD0iNzAwMCIgaGVpZ2h0PSIzOTM4IiB4bGluazpocmVmPSJkYXRhOmltYWdlL2pwZWc7YmFzZTY0LC85ai80QUFRU2taSlJnQUJBUUVBWUFCZ0FBRC8vZ0E3UTFKRlFWUlBVam9nWjJRdGFuQmxaeUIyTVM0d0lDaDFjMmx1WnlCSlNrY2dTbEJGUnlCMk9UQXBMQ0J4ZFdGc2FYUjVJRDBnT1RBSy85c0FRd0FEQWdJREFnSURBd01EQkFNREJBVUlCUVVFQkFVS0J3Y0dDQXdLREF3TENnc0xEUTRTRUEwT0VRNExDeEFXRUJFVEZCVVZGUXdQRnhnV0ZCZ1NGQlVVLzlzQVF3RURCQVFGQkFVSkJRVUpGQTBMRFJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVUvOEFBRVFnQUVnQWdBd0VSQUFJUkFRTVJBZi9FQUI4QUFBRUZBUUVCQVFFQkFBQUFBQUFBQUFBQkFnTUVCUVlIQ0FrS0MvL0VBTFVRQUFJQkF3TUNCQU1GQlFRRUFBQUJmUUVDQXdBRUVRVVNJVEZCQmhOUllRY2ljUlF5Z1pHaENDTkNzY0VWVXRId0pETmljb0lKQ2hZWEdCa2FKU1luS0NrcU5EVTJOemc1T2tORVJVWkhTRWxLVTFSVlZsZFlXVnBqWkdWbVoyaHBhbk4wZFhaM2VIbDZnNFNGaG9lSWlZcVNrNVNWbHBlWW1acWlvNlNscHFlb3FhcXlzN1MxdHJlNHVickN3OFRGeHNmSXljclMwOVRWMXRmWTJkcmg0dVBrNWVibjZPbnE4Zkx6OVBYMjkvajUrdi9FQUI4QkFBTUJBUUVCQVFFQkFRRUFBQUFBQUFBQkFnTUVCUVlIQ0FrS0MvL0VBTFVSQUFJQkFnUUVBd1FIQlFRRUFBRUNkd0FCQWdNUkJBVWhNUVlTUVZFSFlYRVRJaktCQ0JSQ2thR3h3UWtqTTFMd0ZXSnkwUW9XSkRUaEpmRVhHQmthSmljb0tTbzFOamM0T1RwRFJFVkdSMGhKU2xOVVZWWlhXRmxhWTJSbFptZG9hV3B6ZEhWMmQzaDVlb0tEaElXR2g0aUppcEtUbEpXV2w1aVptcUtqcEtXbXA2aXBxckt6dExXMnQ3aTV1c0xEeE1YR3g4akp5dExUMU5YVzE5aloydUxqNU9YbTUranA2dkx6OVBYMjkvajUrdi9hQUF3REFRQUNFUU1SQUQ4QStRSi9qNXFYaXk1RnZjeStYYmpnZzF5eHA4cVBvS3VOVmVwYlpHMXA5L285MUV4U0paSHhrbXRWSnBhbkRWcHdjN1Jad1BqbTkwNmVjUXh4Yld6MnBSbGN5clVIVFp6QjhPQWdTeERHYWJhZWhFRk9tN293dFowcTZzcDkwUUs1OUt1NnRjaVZLVVpjcHIrRTc3VnJVdEdrYnliK0s1NXpqYmM2NmRLcHpMUTZ5MjBXSno1dXBnb1R6azlxNEhYYmRvSHUvVkxwT3FaMnU2M2E2Ym1LMGszcUs2cU1aUzFrZVZpcHdwKzdUSnRUVUdHUElCcm9md0Uxdjk0T3QrSHNTTmNqS0tmcUs4R3UyZlY0WkxUUVQ0cEFKYlNiUUYrbkZSaFBpTk16MHA2SGlMa2wyeVNhK2tXeCtmUzNQLy9aIj4KCTwvaW1hZ2U+Cjwvc3ZnPg=="
+              }
+            },
+            "order_column": 1,
+            "created_at": "2021-11-22T14:52:46.000000Z",
+            "updated_at": "2021-11-22T14:53:09.000000Z",
+            "original_url": "http:\/\/localhost:8000\/storage\/6\/ICONA-Vulcano-Interior-4K-UHD-Wallpaper.jpg",
+            "preview_url": ""
+          }
+        ]
+      },
+      {
+        "name": "WORK",
+        "background_visual": "http:\/\/localhost:8000\/storage\/11\/ICONA-Vulcano-Interior-4K-UHD-Wallpaper.jpg",
+        "projects": [],
+        "media": [
+          {
+            "id": 11,
+            "model_type": "App\\Models\\Page",
+            "model_id": 17,
+            "uuid": "7a2002b1-0fac-4c5f-a59f-8711dc323fda",
+            "collection_name": "background_visual_object",
+            "name": "ICONA-Vulcano-Interior-4K-UHD-Wallpaper",
+            "file_name": "ICONA-Vulcano-Interior-4K-UHD-Wallpaper.jpg",
+            "mime_type": "image\/jpeg",
+            "disk": "public",
+            "conversions_disk": "public",
+            "size": 12781678,
+            "manipulations": [],
+            "custom_properties": [],
+            "generated_conversions": {
+              "thumb": true
+            },
+            "responsive_images": {
+              "media_library_original": {
+                "urls": [
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_7000_3938.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_5856_3294.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_4900_2756.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_4099_2305.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_3429_1929.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_2869_1614.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_2400_1350.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_2008_1129.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_1680_945.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_1406_790.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_1176_661.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_984_553.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_823_462.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_689_387.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_576_324.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_482_271.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_403_226.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_337_189.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_282_158.jpg",
+                  "ICONA-Vulcano-Interior-4K-UHD-Wallpaper___media_library_original_236_132.jpg"
+                ],
+                "base64svg": "data:image\/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiB5PSIwIiB2aWV3Qm94PSIwIDAgNzAwMCAzOTM4Ij4KCTxpbWFnZSB3aWR0aD0iNzAwMCIgaGVpZ2h0PSIzOTM4IiB4bGluazpocmVmPSJkYXRhOmltYWdlL2pwZWc7YmFzZTY0LC85ai80QUFRU2taSlJnQUJBUUVBWUFCZ0FBRC8vZ0E3UTFKRlFWUlBVam9nWjJRdGFuQmxaeUIyTVM0d0lDaDFjMmx1WnlCSlNrY2dTbEJGUnlCMk9UQXBMQ0J4ZFdGc2FYUjVJRDBnT1RBSy85c0FRd0FEQWdJREFnSURBd01EQkFNREJBVUlCUVVFQkFVS0J3Y0dDQXdLREF3TENnc0xEUTRTRUEwT0VRNExDeEFXRUJFVEZCVVZGUXdQRnhnV0ZCZ1NGQlVVLzlzQVF3RURCQVFGQkFVSkJRVUpGQTBMRFJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVUvOEFBRVFnQUVnQWdBd0VSQUFJUkFRTVJBZi9FQUI4QUFBRUZBUUVCQVFFQkFBQUFBQUFBQUFBQkFnTUVCUVlIQ0FrS0MvL0VBTFVRQUFJQkF3TUNCQU1GQlFRRUFBQUJmUUVDQXdBRUVRVVNJVEZCQmhOUllRY2ljUlF5Z1pHaENDTkNzY0VWVXRId0pETmljb0lKQ2hZWEdCa2FKU1luS0NrcU5EVTJOemc1T2tORVJVWkhTRWxLVTFSVlZsZFlXVnBqWkdWbVoyaHBhbk4wZFhaM2VIbDZnNFNGaG9lSWlZcVNrNVNWbHBlWW1acWlvNlNscHFlb3FhcXlzN1MxdHJlNHVickN3OFRGeHNmSXljclMwOVRWMXRmWTJkcmg0dVBrNWVibjZPbnE4Zkx6OVBYMjkvajUrdi9FQUI4QkFBTUJBUUVCQVFFQkFRRUFBQUFBQUFBQkFnTUVCUVlIQ0FrS0MvL0VBTFVSQUFJQkFnUUVBd1FIQlFRRUFBRUNkd0FCQWdNUkJBVWhNUVlTUVZFSFlYRVRJaktCQ0JSQ2thR3h3UWtqTTFMd0ZXSnkwUW9XSkRUaEpmRVhHQmthSmljb0tTbzFOamM0T1RwRFJFVkdSMGhKU2xOVVZWWlhXRmxhWTJSbFptZG9hV3B6ZEhWMmQzaDVlb0tEaElXR2g0aUppcEtUbEpXV2w1aVptcUtqcEtXbXA2aXBxckt6dExXMnQ3aTV1c0xEeE1YR3g4akp5dExUMU5YVzE5aloydUxqNU9YbTUranA2dkx6OVBYMjkvajUrdi9hQUF3REFRQUNFUU1SQUQ4QStRSi9qNXFYaXk1RnZjeStYYmpnZzF5eHA4cVBvS3VOVmVwYlpHMXA5L285MUV4U0paSHhrbXRWSnBhbkRWcHdjN1Jad1BqbTkwNmVjUXh4Yld6MnBSbGN5clVIVFp6QjhPQWdTeERHYWJhZWhFRk9tN293dFowcTZzcDkwUUs1OUt1NnRjaVZLVVpjcHIrRTc3VnJVdEdrYnliK0s1NXpqYmM2NmRLcHpMUTZ5MjBXSno1dXBnb1R6azlxNEhYYmRvSHUvVkxwT3FaMnU2M2E2Ym1LMGszcUs2cU1aUzFrZVZpcHdwKzdUSnRUVUdHUElCcm9md0Uxdjk0T3QrSHNTTmNqS0tmcUs4R3UyZlY0WkxUUVQ0cEFKYlNiUUYrbkZSaFBpTk16MHA2SGlMa2wyeVNhK2tXeCtmUzNQLy9aIj4KCTwvaW1hZ2U+Cjwvc3ZnPg=="
+              }
+            },
+            "order_column": 1,
+            "created_at": "2021-11-22T15:06:52.000000Z",
+            "updated_at": "2021-11-22T15:07:15.000000Z",
+            "original_url": "http:\/\/localhost:8000\/storage\/11\/ICONA-Vulcano-Interior-4K-UHD-Wallpaper.jpg",
+            "preview_url": ""
+          }
+        ]
+      }
+    ]
+  }
+]

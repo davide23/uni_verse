@@ -6,13 +6,13 @@ return [
      * The disk on which to store added files and derived images by default. Choose
      * one or more of the disks you've configured in config/filesystems.php.
      */
-    'disk_name' => env('MEDIA_DISK', 'MEDIA_DISK'),
+    'disk_name' => env('MEDIA_DISK', 'public'),
 
     /*
      * The maximum file size of an item in bytes.
      * Adding a larger file will result in an exception.
      */
-    'max_file_size' => 1024 * 1024 * 100,
+    'max_file_size' => 1024 * 1024 * 4000,
 
     /*
      * This queue will be used to generate derived and responsive images.
@@ -33,19 +33,19 @@ return [
     /*
      * The fully qualified class name of the model used for temporary uploads.
      *
-     * This model is only used in Medium Library Pro (https://medialibrary.pro)
+     * This model is only used in MediumObject Library Pro (https://medialibrary.pro)
      */
     'temporary_upload_model' => Spatie\MediaLibraryPro\Models\TemporaryUpload::class,
 
     /*
-     * When enabled, Medium Library Pro will only process temporary uploads there were uploaded
+     * When enabled, MediumObject Library Pro will only process temporary uploads there were uploaded
      * in the same session. You can opt to disable this for stateless usage of
      * the pro components.
      */
     'enable_temporary_uploads_session_affinity' => true,
 
     /*
-     * When enabled, Medium Library pro will generate thumbnails for uploaded file.
+     * When enabled, MediumObject Library pro will generate thumbnails for uploaded file.
      */
     'generate_thumbnails_for_temporary_uploads' => true,
 
@@ -197,13 +197,13 @@ return [
 
     /*
      * When enabling this option, a route will be registered that will enable
-     * the Medium Library Pro Vue and React components to move uploaded files
+     * the MediumObject Library Pro Vue and React components to move uploaded files
      * in a S3 bucket to their right place.
      */
     'enable_vapor_uploads' => env('ENABLE_MEDIA_LIBRARY_VAPOR_UPLOADS', false),
 
     /*
-     * When converting Medium instances to response the media library will add
+     * When converting MediumObject instances to response the media library will add
      * a `loading` attribute to the `img` tag. Here you can set the default
      * value of that attribute.
      *

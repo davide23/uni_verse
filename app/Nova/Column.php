@@ -2,21 +2,21 @@
 
 namespace App\Nova;
 
+use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
+use Ebess\AdvancedNovaMediaLibrary\Fields\Media;
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Http\Requests\NovaRequest;
 
-class Medium extends Resource
+class Column extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = \App\Models\Medium::class;
+    public static $model = \App\Models\Column::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -44,16 +44,12 @@ class Medium extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
-            Text::make('Path'),
+
+            Text::make('Name'),
             Number::make('Width'),
-            Number::make('height'),
 
-            Text::make('Video'),
-            Number::make('videowidth'),
-            Number::make('videoheight'),
-
-            Boolean::make('enlargefirst'),
-            Text::make('Link'),
+            Images::make('Images', 'visual_media_objects'), // second parameter is the media collection name
+            Media::make('Video', 'visual_media_video'), // second parameter is the media collection name
         ];
     }
 

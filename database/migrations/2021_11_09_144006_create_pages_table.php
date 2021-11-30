@@ -18,10 +18,9 @@ class CreatePagesTable extends Migration
             $table->timestamps();
 
             $table->text('name')->nullable(true);
-            $table->text('background_visual')->nullable(true);
 
             $table->bigInteger('cube_id')->nullable()->unsigned();
-            $table->foreign('cube_id')->references('id')->on('pages')->onDelete('cascade');
+            $table->foreign('cube_id')->references('id')->on('cubes')->onDelete('cascade');
         });
     }
 
