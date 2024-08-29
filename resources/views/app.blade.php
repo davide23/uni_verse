@@ -16,7 +16,7 @@
         <!-- Scripts -->
         @routes
         <script src="https://cdn.jsdelivr.net/npm/babylonjs@6.49.0/babylon.min.js"></script>
-        <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>      
+        <script src="https://cdn.jsdelivr.net/npm/@babylonjs/loaders@6.49.0/index.min.js"></script>      
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
         <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>     
         <script src="{{ mix('js/app.js') }}" defer></script>
